@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://developer.wikimint.com/">
-    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhibolysCW1Ven7oUgUCxIfknMtatSU5_fhON5RZj8DjiSXrlqdw7aADG0orkbRKO0gzxDOA22gmTDtm8kpzonqO_wfwGAf-iOE_XmqKsb7wj7NCaqj17JojBQ9cfrHGJjWZBwfqteKqTOffhd9tHM7wa1OfK_-Wv1YLpfqWWm8af-VpcY6Jpzg9j6Z0A=s699" alt="Wikimint Developer logo" width="200" height="165">
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhibolysCW1Ven7oUgUCxIfknMtatSU5_fhON5RZj8DjiSXrlqdw7aADG0orkbRKO0gzxDOA22gmTDtm8kpzonqO_wfwGAf-iOE_XmqKsb7wj7NCaqj17JojBQ9cfrHGJjWZBwfqteKqTOffhd9tHM7wa1OfK_-Wv1YLpfqWWm8af-VpcY6Jpzg9j6Z0A=s699" alt="Wikimint Developer logo" width="200px" height="auto">
   </a>
 </p>
 
@@ -10,7 +10,7 @@
   Tools, scripts, plugins, snippets, tips, tricks and tutorial for web development and digital marketing.
 </p>
 
-## Documentation
+## Open source
 
 This repository by Wikimint Developer provides open source static resources for web development. To use our resources efficiently, use CDN link provided on the documentation pages. Refer [Wikimint Developer] (https://developer.wikimint.com).
 
