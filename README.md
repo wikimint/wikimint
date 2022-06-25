@@ -12,7 +12,7 @@
 
 ## Open source
 
-This repository by Wikimint Developer provides open source static resources for web development. To use our resources efficiently, use CDN link provided on the documentation pages. Refer [Wikimint Developer] (https://developer.wikimint.com).
+This repository by Wikimint Developer provides open source static resources for web development. To use our resources efficiently, use CDN link provided on the documentation pages. Refer [Wikimint Developer](https://developer.wikimint.com).
 
 ## Copyright and license
 
