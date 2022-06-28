@@ -216,6 +216,7 @@ textarea {padding: 10px;
 .w-20 {width:20%;}
 .w-10 {width:10%;}
 @media screen and (max-width: 600px) {
+	.res-mob .d-flex {display:block;}
 	.res-mob .w-90 { width: 100%;}
 	.res-mob .w-80 { width: 100%;}
 	.res-mob .w-70 { width: 100%;}
@@ -227,6 +228,7 @@ textarea {padding: 10px;
 	.res-mob .w-10 { width: 100%;}
 	}
 @media only screen and (max-width: 960px) {
+	.res-tab .d-flex {display:block;}
 	.res-tab .w-90 { width: 100%;} 
 	.res-tab .w-80 { width: 100%;} 
 	.res-tab .w-70 { width: 100%;} 
