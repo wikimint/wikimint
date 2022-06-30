@@ -110,22 +110,22 @@ textarea {padding: 10px;
 .mb {margin-bottom: var(--wm-space);}
 .ml {margin-left: var(--wm-space);}
 .mr {margin-right: var(--wm-space);}
-.m-0 {margin: 0px;}
-.mt-0 {margin-top: 0px;}
-.mb-0 {margin-bottom: 0px;}
-.ml-0 {margin-left: 0px;}
-.mr-0 {margin-right: 0px;}
+.m-0 {margin: 0px ! important;}
+.mt-0 {margin-top: 0px ! important;}
+.mb-0 {margin-bottom: 0px ! important;}
+.ml-0 {margin-left: 0px ! important;}
+.mr-0 {margin-right: 0px ! important;}
 /* PADDING PROPERTIES */
 .p {padding: var(--wm-space);}
 .pt {padding-top: var(--wm-space);}
 .pb {padding-bottom: var(--wm-space);}
 .pl {padding-left: var(--wm-space);}
 .pr {padding-right: var(--wm-space);}
-.p-0 {padding: 0px;}
-.pt-0 {padding-top: 0px;}
-.pb-0 {padding-bottom: 0px;}
-.pl-0 {padding-left: 0px;}
-.pr-0 {padding-right: 0px;}
+.p-0 {padding: 0px ! important;}
+.pt-0 {padding-top: 0px ! important;}
+.pb-0 {padding-bottom: 0px ! important;}
+.pl-0 {padding-left: 0px ! important;}
+.pr-0 {padding-right: 0px ! important;}
 /* BORDER PROPERTIES */
 .b {border: 1px solid;}
 .b-rad {border-radius: 5px;}
@@ -134,10 +134,10 @@ textarea {padding: 10px;
 .bb {border-bottom: 1px solid;}
 .bl {border-left: 1px solid;}
 .br {border-right: 1px solid;}
-.btlr-0 {border-top-left-radius: 0px;}
-.btrr-0 {border-top-right-radius: 0px;}
-.bblr-0 {border-bottom-left-radius: 0px;}
-.bbrr-0 {border-bottom-right-radius: 0px;}
+.btlr-0 {border-top-left-radius: 0px ! important;}
+.btrr-0 {border-top-right-radius: 0px ! important;}
+.bblr-0 {border-bottom-left-radius: 0px ! important;}
+.bbrr-0 {border-bottom-right-radius: 0px ! important;}
 /*BORDER COLOR*/
 .br-c-primary {border-color: var(--wm-primary);}
 .br-c-secondary {border-color: var(--wm-secondary);}
@@ -153,8 +153,8 @@ textarea {padding: 10px;
  .only-tab { display: none;}
  .only-desk { display: none;}
  .no-mob { display: none;}
- .no-tab { display: none;}
- .no-desk { display: none;}
+ .no-tab { display: block;}
+ .no-desk { display: block;}
  }
 /*TAB ONLY VISIBLE*/
 @media only screen and (max-width: 960px) and (min-width: 600px) {
