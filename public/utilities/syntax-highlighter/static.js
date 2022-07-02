@@ -1,6 +1,3 @@
-/* w3codecolor ver 1.31 by w3schools.com */
-
-
 w3CodeColor();
 toolbar();
 
