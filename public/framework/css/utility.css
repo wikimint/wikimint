@@ -188,6 +188,9 @@ textarea {padding: 10px;
 .mb {margin-bottom: var(--wm-space);}
 .ml {margin-left: var(--wm-space);}
 .mr {margin-right: var(--wm-space);}
+.m-5 {margin:5px;}
+.m-10 {margin:10px;}
+.m-15 {margin:15px;}
 .m-0 {margin: 0px ! important;}
 .mt-0 {margin-top: 0px ! important;}
 .mb-0 {margin-bottom: 0px ! important;}
@@ -211,6 +214,9 @@ textarea {padding: 10px;
 .pb {padding-bottom: var(--wm-space);}
 .pl {padding-left: var(--wm-space);}
 .pr {padding-right: var(--wm-space);}
+.p-5 {padding:5px;}
+.p-10 {padding:10px;}
+.p-15 {padding:15px;}
 .p-0 {padding: 0px ! important;}
 .pt-0 {padding-top: 0px ! important;}
 .pb-0 {padding-bottom: 0px ! important;}
