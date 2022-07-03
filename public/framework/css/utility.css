@@ -84,7 +84,7 @@ textarea {padding: 10px;
 .d-flex {display: flex;}
 .d-table {display: table;}
 .d-grid {display: grid;}
-.d-contnts {display: contents;}
+.d-contents {display: contents;}
 .d-iblock {display: inline-block;}
 .d-iflex {display: inline-flex;}
 .d-itable {display: inline-table;}
@@ -249,6 +249,20 @@ textarea {padding: 10px;
 .btrr-0 {border-top-right-radius: 0px ! important;}
 .bblr-0 {border-bottom-left-radius: 0px ! important;}
 .bbrr-0 {border-bottom-right-radius: 0px ! important;}
+/*BORDER WIDTH*/
+.bw-thin {border-width : thin;}
+.bw-medium {border-width : medium;}
+.bw-thick {border-width : thick;}
+.ol-none {outline:none;}
+/*BORDER STYLE*/
+.bs-dotted {border-style: dotted;}
+.bs-dashed {border-style: dashed;}
+.bs-solid {border-style: solid;}
+.bs-double {border-style: double;}
+.bs-groove {border-style: groove;}
+.bs-ridge {border-style: ridge;}
+.bs-inset {border-style: inset;}
+.bs-outset {border-style: outset;}
 /*BORDER COLOR*/
 .br-c-primary {border-color: var(--wm-primary);}
 .br-c-secondary {border-color: var(--wm-secondary);}
