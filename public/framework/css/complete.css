@@ -150,18 +150,18 @@ textarea {padding: 10px;
 	.ai-start {align-items: start;}
 	.ai-stretch {align-items: stretch;}
 	
-	.as-auto {align-items: auto;}
-	.as-baseline {align-items: baseline;}
-	.as-center {align-items: center;}
-	.as-end {align-items: end;}
-	.as-flex-end {align-items: flex-end;}
-	.as-flex-start {align-items: flex-start;}
-	.as-normal {align-items: normal;}
-	.as-revert {align-items: revert;}
-	.as-self-end {align-items: self-end;}
-	.as-self-start {align-items: self-start;}
-	.as-start {align-items: start;}
-	.as-stretch {align-items: stretch;}
+	.as-auto {align-self: auto;}
+	.as-baseline {align-self: baseline;}
+	.as-center {align-self: center;}
+	.as-end {align-self: end;}
+	.as-flex-end {align-self: flex-end;}
+	.as-flex-start {align-self: flex-start;}
+	.as-normal {align-self: normal;}
+	.as-revert {align-self: revert;}
+	.as-self-end {align-self: self-end;}
+	.as-self-start {align-self: self-start;}
+	.as-start {align-self: start;}
+	.as-stretch {align-self: stretch;}
 
 	.ta-center {text-align: center;}
 	.ta-end {text-align: end;}
@@ -319,6 +319,24 @@ textarea {padding: 10px;
 .zi-2 {z-index : 2;}
 .zi-3 {z-index : 3;}
 .zi-x9 {z-index : 999999999;}
+/*LINE HEIGHT*/
+.lh-inherit {line-height: inherit;}
+.lh-initial {line-height: initial;}
+.lh-normal {line-height: normal;}
+.lh-revert {line-height: revert;}
+/*LINE BREAK*/
+.lb-anywhere {line-break: anywhere;}
+.lb-auto {line-break: auto;}
+.lb-loose {line-break: loose;}
+.lb-normal {line-break: normal;}
+.lb-revert {line-break: revert;}
+.lb-strict {line-break: strict;}
+/*WORD BREAK*/	
+.wb-break-all {word-break: break-all;}
+.wb-break-word {word-break: break-word;}
+.wb-keep-all {word-break: keep-all;}
+.wb-normal {word-break: normal;}
+.wb-revert {word-break: revert;}
 /*MOBILE ONLY VISIBLE*/
 @media only screen and (max-width: 600px) {
  .only-mob { display: block;}
