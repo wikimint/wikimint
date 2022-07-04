@@ -5,17 +5,21 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-  :root{
-	--wm-primary: #0d6efd;
-    --wm-secondary: #6c757d;
-    --wm-success: #198754;
-    --wm-info: #0dcaf0;
-    --wm-warning: #ffc107;
-    --wm-danger: #dc3545;
-    --wm-light: #f8f9fa;
-    --wm-dark: #212529;
-	--wm-space: 20px;
-  }
+:root{
+--wm-primary: #0d6efd;
+--wm-secondary: #6c757d;
+--wm-success: #198754;
+--wm-info: #0dcaf0;
+--wm-warning: #ffc107;
+--wm-danger: #dc3545;
+--wm-light: #f8f9fa;
+--wm-dark: #212529;
+--wm-primary-dim: #cfe2ff;
+--wm-success-dim: #d1e7dd;
+--wm-warning-dim: #fff3cd;
+--wm-danger-dim: #f8d7da;
+--wm-space: 20px;
+}
 
 * {box-sizing: border-box;}
 
@@ -33,23 +37,25 @@ input[type=submit], input[type=button] {font-family: inherit;
  color: #fff;}
 
 textarea {padding: 10px;
- border-radius: 3px;
- border: 2px solid #555;
- font-family: inherit;}
- /*TEXT DECORATION*/
-    .td-auto {text-decoration: auto;}
-	.td-blink {text-decoration: blink;}
-	.td-dashed {text-decoration: dashed;}
-    .td-dotted {text-decoration: dotted;}
-    .td-double {text-decoration: double;}
-    .td-line-through {text-decoration: line-through;}
-    .td-none {text-decoration: none;}
-    .td-revert {text-decoration: revert;}
-    .td-overline {text-decoration: overline;}
-    .td-solid {text-decoration: solid;}
-    .td-underline {text-decoration: underline;}
-    .td-wavy {text-decoration: wavy;}
- /*FONT SIZE*/
+border-radius: 3px;
+border: 2px solid #555;
+font-family: inherit;}
+
+/*TEXT DECORATION*/
+.td-auto {text-decoration: auto;}
+.td-blink {text-decoration: blink;}
+.td-dashed {text-decoration: dashed;}
+.td-dotted {text-decoration: dotted;}
+.td-double {text-decoration: double;}
+.td-line-through {text-decoration: line-through;}
+.td-none {text-decoration: none;}
+.td-revert {text-decoration: revert;}
+.td-overline {text-decoration: overline;}
+.td-solid {text-decoration: solid;}
+.td-underline {text-decoration: underline;}
+.td-wavy {text-decoration: wavy;}
+ 
+/*FONT SIZE*/
 .fs-1 {font-size: 1px;}
 .fs-2 {font-size: 2px;}
 .fs-3 {font-size: 3px;}
@@ -78,6 +84,7 @@ textarea {padding: 10px;
 .fs-50 {font-size: 50px;}
 .fs-55 {font-size: 55px;}
 .fs-60 {font-size: 60px;}
+
 /* DISPLAY PROPERTIES*/
 .d-none {display: none;}
 .d-block {display: block;}
@@ -89,6 +96,7 @@ textarea {padding: 10px;
 .d-iflex {display: inline-flex;}
 .d-itable {display: inline-table;}
 .d-igrid {display: inline-grid;}
+
 /* POSITION PROPERTIES*/
 .p-absolute{position:absolute;}
 .p-fixed{position:fixed;}
@@ -96,6 +104,7 @@ textarea {padding: 10px;
 .p-static{position:static;}
 .p-sticky{position:sticky;}
 .p-revert{position:revert;}
+
 /*FLOAT PROPERTIES*/
 .f-left {float : left;}
 .f-right {float : right;}
@@ -103,7 +112,8 @@ textarea {padding: 10px;
 .f-revert {float : revert;}
 .f-iend {float : inline-end;}
 .f-istart {float : inline-start;}
- /*OPACITY PROPERTY*/	
+ 
+ /*OPACITY PROPERTIES*/
 .op-01 {opacity: 0.1;}
 .op-02 {opacity: 0.2;}
 .op-03 {opacity: 0.3;}
@@ -114,6 +124,7 @@ textarea {padding: 10px;
 .op-08 {opacity: 0.8;}
 .op-09 {opacity: 0.9;}
 .op-1, .op-10 {opacity: 1;}
+
 /* FONT WEIGHT */
 .fw-100 {font-weight: 100;}
 .fw-200 {font-weight: 200;}
@@ -124,6 +135,7 @@ textarea {padding: 10px;
 .fw-700 {font-weight: 700;}
 .fw-800 {font-weight: 800;}
 .fw-900 {font-weight: 900;}
+
 /*TOP BOTTOM LEFT RIGHT PROPERTIES*/
 .r-revert {right:revert;}
 .r-auto {right:auto;}
@@ -137,50 +149,50 @@ textarea {padding: 10px;
 .b-revert {bottom:revert;}
 .b-auto {bottom:auto;}
 .b-0 {bottom:0;}
+
 /*ALIGN PROPERTIES*/
-	.ai-baseline {align-items: baseline;}
-	.ai-center {align-items: center;}
-	.ai-end {align-items: end;}
-	.ai-flex-end {align-items: flex-end;}
-	.ai-flex-start {align-items: flex-start;}
-	.ai-normal {align-items: normal;}
-	.ai-revert {align-items: revert;}
-	.ai-self-end {align-items: self-end;}
-	.ai-self-start {align-items: self-start;}
-	.ai-start {align-items: start;}
-	.ai-stretch {align-items: stretch;}
-	
-	.as-auto {align-self: auto;}
-	.as-baseline {align-self: baseline;}
-	.as-center {align-self: center;}
-	.as-end {align-self: end;}
-	.as-flex-end {align-self: flex-end;}
-	.as-flex-start {align-self: flex-start;}
-	.as-normal {align-self: normal;}
-	.as-revert {align-self: revert;}
-	.as-self-end {align-self: self-end;}
-	.as-self-start {align-self: self-start;}
-	.as-start {align-self: start;}
-	.as-stretch {align-self: stretch;}
+.ai-baseline {align-items: baseline;}
+.ai-center {align-items: center;}
+.ai-end {align-items: end;}
+.ai-flex-end {align-items: flex-end;}
+.ai-flex-start {align-items: flex-start;}
+.ai-normal {align-items: normal;}
+.ai-revert {align-items: revert;}
+.ai-self-end {align-items: self-end;}
+.ai-self-start {align-items: self-start;}
+.ai-start {align-items: start;}
+.ai-stretch {align-items: stretch;}
 
-	.ta-center {text-align: center;}
-	.ta-end {text-align: end;}
-	.ta-justify {text-align: justify;}
-	.ta-left {text-align: left;}
-    .ta-revert {text-align: revert;}
-    .ta-right {text-align: right;}
-    .ta-start {text-align: start;}
+.as-auto {align-self: auto;}
+.as-baseline {align-self: baseline;}
+.as-center {align-self: center;}
+.as-end {align-self: end;}
+.as-flex-end {align-self: flex-end;}
+.as-flex-start {align-self: flex-start;}
+.as-normal {align-self: normal;}
+.as-revert {align-self: revert;}
+.as-self-end {align-self: self-end;}
+.as-self-start {align-self: self-start;}
+.as-start {align-self: start;}
+.as-stretch {align-self: stretch;}
 
-	.va-baseline {vertical-align: baseline;}
-    .va-bottom {vertical-align: bottom;}
-    .va-middle {vertical-align: middle;}
-    .va-revert {vertical-align: revert;}
-    .va-sub {vertical-align: sub;}
-    .va-super {vertical-align: super;}
-    .va-text-bottom {vertical-align: text-bottom;}
-    .va-text-top {vertical-align: text-top;}
-    .va-top {vertical-align: top;}
+.ta-center {text-align: center;}
+.ta-end {text-align: end;}
+.ta-justify {text-align: justify;}
+.ta-left {text-align: left;}
+.ta-revert {text-align: revert;}
+.ta-right {text-align: right;}
+.ta-start {text-align: start;}
 
+.va-baseline {vertical-align: baseline;}
+.va-bottom {vertical-align: bottom;}
+.va-middle {vertical-align: middle;}
+.va-revert {vertical-align: revert;}
+.va-sub {vertical-align: sub;}
+.va-super {vertical-align: super;}
+.va-text-bottom {vertical-align: text-bottom;}
+.va-text-top {vertical-align: text-top;}
+.va-top {vertical-align: top;}
 
 /* MARGIN PROPERTIES */
 .m {margin: var(--wm-space);}
@@ -208,6 +220,7 @@ textarea {padding: 10px;
 .mb-15 {margin-bottom: 15px ! important;}
 .ml-15 {margin-left: 15px ! important;}
 .mr-15 {margin-right: 15px ! important;}
+
 /* PADDING PROPERTIES */
 .p {padding: var(--wm-space);}
 .pt {padding-top: var(--wm-space);}
@@ -237,6 +250,7 @@ textarea {padding: 10px;
 .pb-15 {padding-bottom: 15px ! important;}
 .pl-15 {padding-left: 15px ! important;}
 .pr-15 {padding-right: 15px ! important;}
+
 /* BORDER PROPERTIES */
 .b {border: 1px solid;}
 .b-rad {border-radius: 5px;}
@@ -249,11 +263,13 @@ textarea {padding: 10px;
 .btrr-0 {border-top-right-radius: 0px ! important;}
 .bblr-0 {border-bottom-left-radius: 0px ! important;}
 .bbrr-0 {border-bottom-right-radius: 0px ! important;}
+
 /*BORDER WIDTH*/
 .bw-thin {border-width : thin;}
 .bw-medium {border-width : medium;}
 .bw-thick {border-width : thick;}
 .ol-none {outline:none;}
+
 /*BORDER STYLE*/
 .bs-dotted {border-style: dotted;}
 .bs-dashed {border-style: dashed;}
@@ -263,33 +279,52 @@ textarea {padding: 10px;
 .bs-ridge {border-style: ridge;}
 .bs-inset {border-style: inset;}
 .bs-outset {border-style: outset;}
+
 /*BORDER COLOR*/
-.br-c-primary {border-color: var(--wm-primary);}
-.br-c-secondary {border-color: var(--wm-secondary);}
-.br-c-info {border-color: var(--wm-info);}
-.br-c-success {border-color: var(--wm-success);}
-.br-c-danger {border-color: var(--wm-danger);}
-.br-c-dark {border-color: var(--wm-dark);}
-.br-c-light {border-color: var(--wm-light);}
-.br-c-warning {border-color: var(--wm-warning);}
+.br-c-primary, .br-c-primary-h:hover {border-color: var(--wm-primary);}
+.br-c-secondary, .br-c-secondary-h:hover {border-color: var(--wm-secondary);}
+.br-c-info, .br-c-info-h:hover {border-color: var(--wm-info);}
+.br-c-success, .br-c-success-h:hover {border-color: var(--wm-success);}
+.br-c-danger, .br-c-danger-h:hover {border-color: var(--wm-danger);}
+.br-c-dark, .br-c-dark-h:hover {border-color: var(--wm-dark);}
+.br-c-light, .br-c-light-h:hover {border-color: var(--wm-light);}
+.br-c-warning, .br-c-warning-h:hover {border-color: var(--wm-warning);}
+
+.br-c-primary-dim, .br-c-primary-dim-h:hover {border-color: var(--wm-primary-dim);}
+.br-c-success-dim, .br-c-success-dim-h:hover {border-color: var(--wm-success-dim);}
+.br-c-danger-dim, .br-c-danger-dim-h:hover {border-color: var(--wm-danger-dim);}
+.br-c-warning-dim, .br-c-warning-dim-h:hover {border-color: var(--wm-warning-dim);}
+
 /*TEXT COLOR*/
-.c-primary {color: var(--wm-primary);}
-.c-secondary {color: var(--wm-secondary);}
-.c-info {color: var(--wm-info);}
-.c-success {color: var(--wm-success);}
-.c-danger {color: var(--wm-danger);}
-.c-dark {color: var(--wm-dark);}
-.c-light {color: var(--wm-light);}
-.c-warning {color: var(--wm-warning);}
+.c-primary, .c-primary-h:hover {color: var(--wm-primary);}
+.c-secondary, .c-secondary-h:hover {color: var(--wm-secondary);}
+.c-info, .c-info-h:hover {color: var(--wm-info);}
+.c-success, .c-success-h:hover {color: var(--wm-success);}
+.c-danger, .c-danger-h:hover {color: var(--wm-danger);}
+.c-dark, .c-dark-h:hover {color: var(--wm-dark);}
+.c-light, .c-light-h:hover {color: var(--wm-light);}
+.c-warning, .c-warning-h:hover {color: var(--wm-warning);}
+
+.c-primary-dim, .c-primary-dim-h:hover {color: var(--wm-primary-dim);}
+.c-success-dim, .c-success-dim-h:hover {color: var(--wm-success-dim);}
+.c-danger-dim, .c-danger-dim-h:hover {color: var(--wm-danger-dim);}
+.c-warning-dim, .c-warning-dim-h:hover {color: var(--wm-warning-dim);}
+
 /*BACKGROUND COLOR*/
-.bg-c-primary {background: var(--wm-primary);}
-.bg-c-secondary {background: var(--wm-secondary);}
-.bg-c-info {background: var(--wm-info);}
-.bg-c-success {background: var(--wm-success);}
-.bg-c-danger {background: var(--wm-danger);}
-.bg-c-dark {background: var(--wm-dark);}
-.bg-c-light {background: var(--wm-light);}
-.bg-c-warning {background: var(--wm-warning);}
+.bg-c-primary, .bg-c-primary-h:hover {background: var(--wm-primary);}
+.bg-c-secondary, .bg-c-secondary-h:hover {background: var(--wm-secondary);}
+.bg-c-info, .bg-c-info-h:hover {background: var(--wm-info);}
+.bg-c-success, .bg-c-success-h:hover {background: var(--wm-success);}
+.bg-c-danger, .bg-c-danger-h:hover {background: var(--wm-danger);}
+.bg-c-dark, .bg-c-dark-h:hover {background: var(--wm-dark);}
+.bg-c-light, .bg-c-light-h:hover {background: var(--wm-light);}
+.bg-c-warning, .bg-c-warning-h:hover {background: var(--wm-warning);}
+
+.bg-c-primary-dim, .bg-c-primary-dim-h:hover {background: var(--wm-primary-dim);}
+.bg-c-success-dim, .bg-c-success-dim-h:hover {background: var(--wm-success-dim);}
+.bg-c-danger-dim, .bg-c-danger-dim-h:hover {background: var(--wm-danger-dim);}
+.bg-c-warning-dim, .bg-c-warning-dim-h:hover {background: var(--wm-warning-dim);}
+
 /*OUTLINE PROPERTIES*/
 .ol-none {outline:none;}
 .ols-dotted {outline-style: dotted;}
@@ -308,22 +343,26 @@ textarea {padding: 10px;
 .ol-c-dark {outline-color: var(--wm-dark);}
 .ol-c-light {outline-color: var(--wm-light);}
 .ol-c-warning {outline-color: var(--wm-warning);}
+
 /*OVERFLOW PROPERTIES*/
 .of-visible {overflow:visible;}
 .of-hidden {overflow:hidden;}
 .of-scroll {overflow:scroll;}
 .of-auto {overflow:auto;}
+
 /*Z-INDEX PROPERTIES*/
 .zi-n1 {z-index : -1;}
 .zi-1 {z-index : 1;}
 .zi-2 {z-index : 2;}
 .zi-3 {z-index : 3;}
 .zi-x9 {z-index : 999999999;}
+
 /*LINE HEIGHT*/
 .lh-inherit {line-height: inherit;}
 .lh-initial {line-height: initial;}
 .lh-normal {line-height: normal;}
 .lh-revert {line-height: revert;}
+
 /*LINE BREAK*/
 .lb-anywhere {line-break: anywhere;}
 .lb-auto {line-break: auto;}
@@ -331,12 +370,14 @@ textarea {padding: 10px;
 .lb-normal {line-break: normal;}
 .lb-revert {line-break: revert;}
 .lb-strict {line-break: strict;}
-/*WORD BREAK*/	
+
+/*WORD BREAK*/
 .wb-break-all {word-break: break-all;}
 .wb-break-word {word-break: break-word;}
 .wb-keep-all {word-break: keep-all;}
 .wb-normal {word-break: normal;}
 .wb-revert {word-break: revert;}
+
 /*MOBILE ONLY VISIBLE*/
 @media only screen and (max-width: 600px) {
  .only-mob { display: block;}
@@ -346,6 +387,7 @@ textarea {padding: 10px;
  .no-tab { display: block;}
  .no-desk { display: block;}
  }
+
 /*TAB ONLY VISIBLE*/
 @media only screen and (max-width: 960px) and (min-width: 600px) {
  .only-mob { display: none;}
@@ -355,6 +397,7 @@ textarea {padding: 10px;
  .no-tab { display: none;}
  .no-desk { display: block;}
  }
+
 /*DESKTOP ONLY VISIBLE*/
 @media only screen and (min-width: 960px) {
  .only-mob { display: none;}
@@ -378,542 +421,487 @@ textarea {padding: 10px;
 .w-20, .no-res .w-20 {width:20%;}
 .w-10, .no-res .w-10 {width:10%;}
 @media screen and (max-width: 600px) {
-	.res-mob .d-flex {display:block;}
-	.res-mob .w-90 { width: 100%;}
-	.res-mob .w-80 { width: 100%;}
-	.res-mob .w-70 { width: 100%;}
-	.res-mob .w-60 { width: 100%;}
-	.res-mob .w-50 { width: 100%;}
-	.res-mob .w-40 { width: 100%;}	
-	.res-mob .w-30 { width: 100%;}
-	.res-mob .w-20 { width: 100%;}
-	.res-mob .w-10 { width: 100%;}
-	}
+.res-mob .d-flex {display:block;}
+.res-mob .w-90 { width: 100%;}
+.res-mob .w-80 { width: 100%;}
+.res-mob .w-70 { width: 100%;}
+.res-mob .w-60 { width: 100%;}
+.res-mob .w-50 { width: 100%;}
+.res-mob .w-40 { width: 100%;}
+.res-mob .w-30 { width: 100%;}
+.res-mob .w-20 { width: 100%;}
+.res-mob .w-10 { width: 100%;}
+}
 @media only screen and (max-width: 960px) {
-	.res-tab .d-flex {display:block;}	
-	.res-tab .w-90 { width: 100%;} 
-	.res-tab .w-80 { width: 100%;} 
-	.res-tab .w-70 { width: 100%;} 
-	.res-tab .w-60 { width: 100%;} 
-	.res-tab .w-50 { width: 100%;} 
-	.res-tab .w-40 { width: 100%;} 
-	.res-tab .w-30 { width: 100%;} 
-	.res-tab .w-20 { width: 100%;} 
-	.res-tab .w-10 { width: 100%;} 
-	}
+.res-tab .d-flex {display:block;}
+.res-tab .w-90 { width: 100%;} 
+.res-tab .w-80 { width: 100%;} 
+.res-tab .w-70 { width: 100%;} 
+.res-tab .w-60 { width: 100%;} 
+.res-tab .w-50 { width: 100%;} 
+.res-tab .w-40 { width: 100%;} 
+.res-tab .w-30 { width: 100%;} 
+.res-tab .w-20 { width: 100%;} 
+.res-tab .w-10 { width: 100%;} 
+}
 
+/*  TEXT COLORS */
+.c-aliceblue {color: aliceblue;}
+.c-antiquewhite {color: antiquewhite;}
+.c-aqua {color: aqua;}
+.c-aquamarine {color: aquamarine;}
+.c-azure {color: azure;}
+.c-beige {color: beige;}
+.c-bisque {color: bisque;}
+.c-black {color: black;}
+.c-blanchedalmond {color: blanchedalmond;}
+.c-blue {color: blue;}
+.c-blueviolet {color: blueviolet;}
+.c-brown {color: brown;}
+.c-burlywood {color: burlywood;}
+.c-cadetblue {color: cadetblue;}
+.c-chartreuse {color: chartreuse;}
+.c-chocolate {color: chocolate;}
+.c-coral {color: coral;}
+.c-cornflowerblue {color: cornflowerblue;}
+.c-cornsilk {color: cornsilk;}
+.c-crimson {color: crimson;}
+.c-currentColor {color: currentColor;}
+.c-currentcolor {color: currentcolor;}
+.c-cyan {color: cyan;}
+.c-darkblue {color: darkblue;}
+.c-darkcyan {color: darkcyan;}
+.c-darkgoldenrod {color: darkgoldenrod;}
+.c-darkgray {color: darkgray;}
+.c-darkgreen {color: darkgreen;}
+.c-darkgrey {color: darkgrey;}
+.c-darkkhaki {color: darkkhaki;}
+.c-darkmagenta {color: darkmagenta;}
+.c-darkolivegreen {color: darkolivegreen;}
+.c-darkorange {color: darkorange;}
+.c-darkorchid {color: darkorchid;}
+.c-darkred {color: darkred;}
+.c-darksalmon {color: darksalmon;}
+.c-darkseagreen {color: darkseagreen;}
+.c-darkslateblue {color: darkslateblue;}
+.c-darkslategray {color: darkslategray;}
+.c-darkslategrey {color: darkslategrey;}
+.c-darkturquoise {color: darkturquoise;}
+.c-darkviolet {color: darkviolet;}
+.c-deeppink {color: deeppink;}
+.c-deepskyblue {color: deepskyblue;}
+.c-dimgray {color: dimgray;}
+.c-dimgrey {color: dimgrey;}
+.c-dodgerblue {color: dodgerblue;}
+.c-firebrick {color: firebrick;}
+.c-floralwhite {color: floralwhite;}
+.c-forestgreen {color: forestgreen;}
+.c-fuchsia {color: fuchsia;}
+.c-gainsboro {color: gainsboro;}
+.c-ghostwhite {color: ghostwhite;}
+.c-gold {color: gold;}
+.c-goldenrod {color: goldenrod;}
+.c-gray {color: gray;}
+.c-green {color: green;}
+.c-greenyellow {color: greenyellow;}
+.c-grey {color: grey;}
+.c-honeydew {color: honeydew;}
+.c-hotpink {color: hotpink;}
+.c-indianred {color: indianred;}
+.c-indigo {color: indigo;}
+.c-ivory {color: ivory;}
+.c-khaki {color: khaki;}
+.c-lavender {color: lavender;}
+.c-lavenderblush {color: lavenderblush;}
+.c-lawngreen {color: lawngreen;}
+.c-lemonchiffon {color: lemonchiffon;}
+.c-lightblue {color: lightblue;}
+.c-lightcoral {color: lightcoral;}
+.c-lightcyan {color: lightcyan;}
+.c-lightgoldenrodyellow {color: lightgoldenrodyellow;}
+.c-lightgray {color: lightgray;}
+.c-lightgreen {color: lightgreen;}
+.c-lightpink {color: lightpink;}
+.c-lightsalmon {color: lightsalmon;}
+.c-lightseagreen {color: lightseagreen;}
+.c-lightskyblue {color: lightskyblue;}
+.c-lightslategray {color: lightslategray;}
+.c-lightslategrey {color: lightslategrey;}
+.c-lightsteelblue {color: lightsteelblue;}
+.c-lightyellow {color: lightyellow;}
+.c-lime {color: lime;}
+.c-limegreen {color: limegreen;}
+.c-linen {color: linen;}
+.c-magenta {color: magenta;}
+.c-maroon {color: maroon;}
+.c-mediumaquamarine {color: mediumaquamarine;}
+.c-mediumblue {color: mediumblue;}
+.c-mediumorchid {color: mediumorchid;}
+.c-mediumpurple {color: mediumpurple;}
+.c-mediumseagreen {color: mediumseagreen;}
+.c-mediumslateblue {color: mediumslateblue;}
+.c-mediumspringgreen {color: mediumspringgreen;}
+.c-mediumturquoise {color: mediumturquoise;}
+.c-mediumvioletred {color: mediumvioletred;}
+.c-midnightblue {color: midnightblue;}
+.c-mintcream {color: mintcream;}
+.c-mistyrose {color: mistyrose;}
+.c-moccasin {color: moccasin;}
+.c-navajowhite {color: navajowhite;}
+.c-navy {color: navy;}
+.c-oldlace {color: oldlace;}
+.c-olive {color: olive;}
+.c-olivedrab {color: olivedrab;}
+.c-orange {color: orange;}
+.c-orangered {color: orangered;}
+.c-orchid {color: orchid;}
+.c-palegoldenrod {color: palegoldenrod;}
+.c-palegreen {color: palegreen;}
+.c-paleturquoise {color: paleturquoise;}
+.c-palevioletred {color: palevioletred;}
+.c-papayawhip {color: papayawhip;}
+.c-peachpuff {color: peachpuff;}
+.c-peru {color: peru;}
+.c-pink {color: pink;}
+.c-plum {color: plum;}
+.c-powderblue {color: powderblue;}
+.c-purple {color: purple;}
+.c-rebeccapurple {color: rebeccapurple;}
+.c-red {color: red;}
+.c-rosybrown {color: rosybrown;}
+.c-royalblue {color: royalblue;}
+.c-saddlebrown {color: saddlebrown;}
+.c-salmon {color: salmon;}
+.c-sandybrown {color: sandybrown;}
+.c-seagreen {color: seagreen;}
+.c-seashell {color: seashell;}
+.c-sienna {color: sienna;}
+.c-silver {color: silver;}
+.c-skyblue {color: skyblue;}
+.c-slateblue {color: slateblue;}
+.c-slategray {color: slategray;}
+.c-slategrey {color: slategrey;}
+.c-snow {color: snow;}
+.c-springgreen {color: springgreen;}
+.c-steelblue {color: steelblue;}
+.c-tan {color: tan;}
+.c-teal {color: teal;}
+.c-thistle {color: thistle;}
+.c-tomato {color: tomato;}
+.c-transparent {color: transparent;}
+.c-turquoise {color: turquoise;}
+.c-violet {color: violet;}
+.c-wheat {color: wheat;}
+.c-white {color: white;}
+.c-whitesmoke {color: whitesmoke;}
+.c-yellow {color: yellow;}
+.c-yellowgreen {color: yellowgreen;}
 
-
-/*  TEXT COLORS */	
-	.c-aliceblue {color: aliceblue;}
-	.c-antiquewhite {color: antiquewhite;}
-	.c-aqua {color: aqua;}
-	.c-aquamarine {color: aquamarine;}
-	.c-azure {color: azure;}
-
-	.c-beige {color: beige;}
-    .c-bisque {color: bisque;}
-    .c-black {color: black;}
-    .c-blanchedalmond {color: blanchedalmond;}
-    .c-blue {color: blue;}
-    .c-blueviolet {color: blueviolet;}
-    .c-brown {color: brown;}
-    .c-burlywood {color: burlywood;}
-	
-	.c-cadetblue {color: cadetblue;}
-    .c-chartreuse {color: chartreuse;}
-    .c-chocolate {color: chocolate;}
-    .c-coral {color: coral;}
-    .c-cornflowerblue {color: cornflowerblue;}
-    .c-cornsilk {color: cornsilk;}
-    .c-crimson {color: crimson;}
-    .c-currentColor {color: currentColor;}
-    .c-currentcolor {color: currentcolor;}
-    .c-cyan {color: cyan;}
-	
-	.c-darkblue {color: darkblue;}
-    .c-darkcyan {color: darkcyan;}
-    .c-darkgoldenrod {color: darkgoldenrod;}
-    .c-darkgray {color: darkgray;}
-    .c-darkgreen {color: darkgreen;}
-    .c-darkgrey {color: darkgrey;}
-    .c-darkkhaki {color: darkkhaki;}
-    .c-darkmagenta {color: darkmagenta;}
-    .c-darkolivegreen {color: darkolivegreen;}
-    .c-darkorange {color: darkorange;}
-    .c-darkorchid {color: darkorchid;}
-    .c-darkred {color: darkred;}
-    .c-darksalmon {color: darksalmon;}
-    .c-darkseagreen {color: darkseagreen;}
-    .c-darkslateblue {color: darkslateblue;}
-    .c-darkslategray {color: darkslategray;}
-    .c-darkslategrey {color: darkslategrey;}
-    .c-darkturquoise {color: darkturquoise;}
-    .c-darkviolet {color: darkviolet;}
-    .c-deeppink {color: deeppink;}
-    .c-deepskyblue {color: deepskyblue;}
-    .c-dimgray {color: dimgray;}
-    .c-dimgrey {color: dimgrey;}
-    .c-dodgerblue {color: dodgerblue;}
-	
-	.c-firebrick {color: firebrick;}
-    .c-floralwhite {color: floralwhite;}
-    .c-forestgreen {color: forestgreen;}
-    .c-fuchsia {color: fuchsia;}
-	
-	.c-gainsboro {color: gainsboro;}
-    .c-ghostwhite {color: ghostwhite;}
-    .c-gold {color: gold;}
-    .c-goldenrod {color: goldenrod;}
-    .c-gray {color: gray;}
-    .c-green {color: green;}
-    .c-greenyellow {color: greenyellow;}
-    .c-grey {color: grey;}
-	
-	.c-honeydew {color: honeydew;}
-    .c-hotpink {color: hotpink;}
-	
-	.c-indianred {color: indianred;}
-    .c-indigo {color: indigo;}
-    .c-ivory {color: ivory;}
-	
-	.c-khaki {color: khaki;}
-	
-	.c-lavender {color: lavender;}
-    .c-lavenderblush {color: lavenderblush;}
-    .c-lawngreen {color: lawngreen;}
-    .c-lemonchiffon {color: lemonchiffon;}
-    .c-lightblue {color: lightblue;}
-    .c-lightcoral {color: lightcoral;}
-    .c-lightcyan {color: lightcyan;}
-    .c-lightgoldenrodyellow {color: lightgoldenrodyellow;}
-    .c-lightgray {color: lightgray;}
-    .c-lightgreen {color: lightgreen;}
-    .c-lightpink {color: lightpink;}
-    .c-lightsalmon {color: lightsalmon;}
-    .c-lightseagreen {color: lightseagreen;}
-    .c-lightskyblue {color: lightskyblue;}
-    .c-lightslategray {color: lightslategray;}
-    .c-lightslategrey {color: lightslategrey;}
-    .c-lightsteelblue {color: lightsteelblue;}
-    .c-lightyellow {color: lightyellow;}
-    .c-lime {color: lime;}
-    .c-limegreen {color: limegreen;}
-    .c-linen {color: linen;}
-	
-	.c-magenta {color: magenta;}
-    .c-maroon {color: maroon;}
-    .c-mediumaquamarine {color: mediumaquamarine;}
-    .c-mediumblue {color: mediumblue;}
-    .c-mediumorchid {color: mediumorchid;}
-    .c-mediumpurple {color: mediumpurple;}
-    .c-mediumseagreen {color: mediumseagreen;}
-    .c-mediumslateblue {color: mediumslateblue;}
-    .c-mediumspringgreen {color: mediumspringgreen;}
-    .c-mediumturquoise {color: mediumturquoise;}
-    .c-mediumvioletred {color: mediumvioletred;}
-    .c-midnightblue {color: midnightblue;}
-    .c-mintcream {color: mintcream;}
-    .c-mistyrose {color: mistyrose;}
-    .c-moccasin {color: moccasin;}
-	
-	.c-navajowhite {color: navajowhite;}
-    .c-navy {color: navy;}
-	
-	.c-oldlace {color: oldlace;}
-    .c-olive {color: olive;}
-    .c-olivedrab {color: olivedrab;}
-    .c-orange {color: orange;}
-    .c-orangered {color: orangered;}
-    .c-orchid {color: orchid;}
-	
-	.c-palegoldenrod {color: palegoldenrod;}
-    .c-palegreen {color: palegreen;}
-    .c-paleturquoise {color: paleturquoise;}
-    .c-palevioletred {color: palevioletred;}
-    .c-papayawhip {color: papayawhip;}
-    .c-peachpuff {color: peachpuff;}
-    .c-peru {color: peru;}
-    .c-pink {color: pink;}
-    .c-plum {color: plum;}
-    .c-powderblue {color: powderblue;}
-    .c-purple {color: purple;}
-	
-	.c-rebeccapurple {color: rebeccapurple;}
-    .c-red {color: red;}
-    .c-rosybrown {color: rosybrown;}
-    .c-royalblue {color: royalblue;}
-	
-	.c-saddlebrown {color: saddlebrown;}
-    .c-salmon {color: salmon;}
-    .c-sandybrown {color: sandybrown;}
-    .c-seagreen {color: seagreen;}
-    .c-seashell {color: seashell;}
-    .c-sienna {color: sienna;}
-    .c-silver {color: silver;}
-    .c-skyblue {color: skyblue;}
-    .c-slateblue {color: slateblue;}
-    .c-slategray {color: slategray;}
-    .c-slategrey {color: slategrey;}
-    .c-snow {color: snow;}
-    .c-springgreen {color: springgreen;}
-    .c-steelblue {color: steelblue;}
-	
-	.c-tan {color: tan;}
-    .c-teal {color: teal;}
-    .c-thistle {color: thistle;}
-    .c-tomato {color: tomato;}
-    .c-transparent {color: transparent;}
-    .c-turquoise {color: turquoise;}
-	
-	.c-violet {color: violet;}
-    .c-wheat {color: wheat;}
-    .c-white {color: white;}
-    .c-whitesmoke {color: whitesmoke;}
-    .c-yellow {color: yellow;}
-    .c-yellowgreen {color: yellowgreen;}
-	
 /* BACKGROUND COLORS */
+.bg-c-aliceblue {background: aliceblue;}
+.bg-c-antiquewhite {background: antiquewhite;}
+.bg-c-aqua {background: aqua;}
+.bg-c-aquamarine {background: aquamarine;}
+.bg-c-azure {background: azure;}
+.bg-c-beige {background: beige;}
+.bg-c-bisque {background: bisque;}
+.bg-c-black {background: black;}
+.bg-c-blanchedalmond {background: blanchedalmond;}
+.bg-c-blue {background: blue;}
+.bg-c-blueviolet {background: blueviolet;}
+.bg-c-brown {background: brown;}
+.bg-c-burlywood {background: burlywood;}
+.bg-c-cadetblue {background: cadetblue;}
+.bg-c-chartreuse {background: chartreuse;}
+.bg-c-chocolate {background: chocolate;}
+.bg-c-coral {background: coral;}
+.bg-c-cornflowerblue {background: cornflowerblue;}
+.bg-c-cornsilk {background: cornsilk;}
+.bg-c-crimson {background: crimson;}
+.bg-c-currentColor {background: currentColor;}
+.bg-c-currentcolor {background: currentcolor;}
+.bg-c-cyan {background: cyan;}
+.bg-c-darkblue {background: darkblue;}
+.bg-c-darkcyan {background: darkcyan;}
+.bg-c-darkgoldenrod {background: darkgoldenrod;}
+.bg-c-darkgray {background: darkgray;}
+.bg-c-darkgreen {background: darkgreen;}
+.bg-c-darkgrey {background: darkgrey;}
+.bg-c-darkkhaki {background: darkkhaki;}
+.bg-c-darkmagenta {background: darkmagenta;}
+.bg-c-darkolivegreen {background: darkolivegreen;}
+.bg-c-darkorange {background: darkorange;}
+.bg-c-darkorchid {background: darkorchid;}
+.bg-c-darkred {background: darkred;}
+.bg-c-darksalmon {background: darksalmon;}
+.bg-c-darkseagreen {background: darkseagreen;}
+.bg-c-darkslateblue {background: darkslateblue;}
+.bg-c-darkslategray {background: darkslategray;}
+.bg-c-darkslategrey {background: darkslategrey;}
+.bg-c-darkturquoise {background: darkturquoise;}
+.bg-c-darkviolet {background: darkviolet;}
+.bg-c-deeppink {background: deeppink;}
+.bg-c-deepskyblue {background: deepskyblue;}
+.bg-c-dimgray {background: dimgray;}
+.bg-c-dimgrey {background: dimgrey;}
+.bg-c-dodgerblue {background: dodgerblue;}
+.bg-c-firebrick {background: firebrick;}
+.bg-c-floralwhite {background: floralwhite;}
+.bg-c-forestgreen {background: forestgreen;}
+.bg-c-fuchsia {background: fuchsia;}
+.bg-c-gainsboro {background: gainsboro;}
+.bg-c-ghostwhite {background: ghostwhite;}
+.bg-c-gold {background: gold;}
+.bg-c-goldenrod {background: goldenrod;}
+.bg-c-gray {background: gray;}
+.bg-c-green {background: green;}
+.bg-c-greenyellow {background: greenyellow;}
+.bg-c-grey {background: grey;}
+.bg-c-honeydew {background: honeydew;}
+.bg-c-hotpink {background: hotpink;}
+.bg-c-indianred {background: indianred;}
+.bg-c-indigo {background: indigo;}
+.bg-c-ivory {background: ivory;}
+.bg-c-khaki {background: khaki;}
+.bg-c-lavender {background: lavender;}
+.bg-c-lavenderblush {background: lavenderblush;}
+.bg-c-lawngreen {background: lawngreen;}
+.bg-c-lemonchiffon {background: lemonchiffon;}
+.bg-c-lightblue {background: lightblue;}
+.bg-c-lightcoral {background: lightcoral;}
+.bg-c-lightcyan {background: lightcyan;}
+.bg-c-lightgoldenrodyellow {background: lightgoldenrodyellow;}
+.bg-c-lightgray {background: lightgray;}
+.bg-c-lightgreen {background: lightgreen;}
+.bg-c-lightpink {background: lightpink;}
+.bg-c-lightsalmon {background: lightsalmon;}
+.bg-c-lightseagreen {background: lightseagreen;}
+.bg-c-lightskyblue {background: lightskyblue;}
+.bg-c-lightslategray {background: lightslategray;}
+.bg-c-lightslategrey {background: lightslategrey;}
+.bg-c-lightsteelblue {background: lightsteelblue;}
+.bg-c-lightyellow {background: lightyellow;}
+.bg-c-lime {background: lime;}
+.bg-c-limegreen {background: limegreen;}
+.bg-c-linen {background: linen;}
+.bg-c-magenta {background: magenta;}
+.bg-c-maroon {background: maroon;}
+.bg-c-mediumaquamarine {background: mediumaquamarine;}
+.bg-c-mediumblue {background: mediumblue;}
+.bg-c-mediumorchid {background: mediumorchid;}
+.bg-c-mediumpurple {background: mediumpurple;}
+.bg-c-mediumseagreen {background: mediumseagreen;}
+.bg-c-mediumslateblue {background: mediumslateblue;}
+.bg-c-mediumspringgreen {background: mediumspringgreen;}
+.bg-c-mediumturquoise {background: mediumturquoise;}
+.bg-c-mediumvioletred {background: mediumvioletred;}
+.bg-c-midnightblue {background: midnightblue;}
+.bg-c-mintcream {background: mintcream;}
+.bg-c-mistyrose {background: mistyrose;}
+.bg-c-moccasin {background: moccasin;}
+.bg-c-navajowhite {background: navajowhite;}
+.bg-c-navy {background: navy;}
+.bg-c-oldlace {background: oldlace;}
+.bg-c-olive {background: olive;}
+.bg-c-olivedrab {background: olivedrab;}
+.bg-c-orange {background: orange;}
+.bg-c-orangered {background: orangered;}
+.bg-c-orchid {background: orchid;}
+.bg-c-palegoldenrod {background: palegoldenrod;}
+.bg-c-palegreen {background: palegreen;}
+.bg-c-paleturquoise {background: paleturquoise;}
+.bg-c-palevioletred {background: palevioletred;}
+.bg-c-papayawhip {background: papayawhip;}
+.bg-c-peachpuff {background: peachpuff;}
+.bg-c-peru {background: peru;}
+.bg-c-pink {background: pink;}
+.bg-c-plum {background: plum;}
+.bg-c-powderblue {background: powderblue;}
+.bg-c-purple {background: purple;}
+.bg-c-rebeccapurple {background: rebeccapurple;}
+.bg-c-red {background: red;}
+.bg-c-rosybrown {background: rosybrown;}
+.bg-c-royalblue {background: royalblue;}
+.bg-c-saddlebrown {background: saddlebrown;}
+.bg-c-salmon {background: salmon;}
+.bg-c-sandybrown {background: sandybrown;}
+.bg-c-seagreen {background: seagreen;}
+.bg-c-seashell {background: seashell;}
+.bg-c-sienna {background: sienna;}
+.bg-c-silver {background: silver;}
+.bg-c-skyblue {background: skyblue;}
+.bg-c-slateblue {background: slateblue;}
+.bg-c-slategray {background: slategray;}
+.bg-c-slategrey {background: slategrey;}
+.bg-c-snow {background: snow;}
+.bg-c-springgreen {background: springgreen;}
+.bg-c-steelblue {background: steelblue;}
+.bg-c-tan {background: tan;}
+.bg-c-teal {background: teal;}
+.bg-c-thistle {background: thistle;}
+.bg-c-tomato {background: tomato;}
+.bg-c-transparent {background: transparent;}
+.bg-c-turquoise {background: turquoise;}
+.bg-c-violet {background: violet;}
+.bg-c-wheat {background: wheat;}
+.bg-c-white {background: white;}
+.bg-c-whitesmoke {background: whitesmoke;}
+.bg-c-yellow {background: yellow;}
+.bg-c-yellowgreen {background: yellowgreen;}
 
-	.bg-c-aliceblue {background: aliceblue;}
-	.bg-c-antiquewhite {background: antiquewhite;}
-	.bg-c-aqua {background: aqua;}
-	.bg-c-aquamarine {background: aquamarine;}
-	.bg-c-azure {background: azure;}
-
-	.bg-c-beige {background: beige;}
-    .bg-c-bisque {background: bisque;}
-    .bg-c-black {background: black;}
-    .bg-c-blanchedalmond {background: blanchedalmond;}
-    .bg-c-blue {background: blue;}
-    .bg-c-blueviolet {background: blueviolet;}
-    .bg-c-brown {background: brown;}
-    .bg-c-burlywood {background: burlywood;}
-	
-	.bg-c-cadetblue {background: cadetblue;}
-    .bg-c-chartreuse {background: chartreuse;}
-    .bg-c-chocolate {background: chocolate;}
-    .bg-c-coral {background: coral;}
-    .bg-c-cornflowerblue {background: cornflowerblue;}
-    .bg-c-cornsilk {background: cornsilk;}
-    .bg-c-crimson {background: crimson;}
-    .bg-c-currentColor {background: currentColor;}
-    .bg-c-currentcolor {background: currentcolor;}
-    .bg-c-cyan {background: cyan;}
-	
-	.bg-c-darkblue {background: darkblue;}
-    .bg-c-darkcyan {background: darkcyan;}
-    .bg-c-darkgoldenrod {background: darkgoldenrod;}
-    .bg-c-darkgray {background: darkgray;}
-    .bg-c-darkgreen {background: darkgreen;}
-    .bg-c-darkgrey {background: darkgrey;}
-    .bg-c-darkkhaki {background: darkkhaki;}
-    .bg-c-darkmagenta {background: darkmagenta;}
-    .bg-c-darkolivegreen {background: darkolivegreen;}
-    .bg-c-darkorange {background: darkorange;}
-    .bg-c-darkorchid {background: darkorchid;}
-    .bg-c-darkred {background: darkred;}
-    .bg-c-darksalmon {background: darksalmon;}
-    .bg-c-darkseagreen {background: darkseagreen;}
-    .bg-c-darkslateblue {background: darkslateblue;}
-    .bg-c-darkslategray {background: darkslategray;}
-    .bg-c-darkslategrey {background: darkslategrey;}
-    .bg-c-darkturquoise {background: darkturquoise;}
-    .bg-c-darkviolet {background: darkviolet;}
-    .bg-c-deeppink {background: deeppink;}
-    .bg-c-deepskyblue {background: deepskyblue;}
-    .bg-c-dimgray {background: dimgray;}
-    .bg-c-dimgrey {background: dimgrey;}
-    .bg-c-dodgerblue {background: dodgerblue;}
-	
-	.bg-c-firebrick {background: firebrick;}
-    .bg-c-floralwhite {background: floralwhite;}
-    .bg-c-forestgreen {background: forestgreen;}
-    .bg-c-fuchsia {background: fuchsia;}
-	
-	.bg-c-gainsboro {background: gainsboro;}
-    .bg-c-ghostwhite {background: ghostwhite;}
-    .bg-c-gold {background: gold;}
-    .bg-c-goldenrod {background: goldenrod;}
-    .bg-c-gray {background: gray;}
-    .bg-c-green {background: green;}
-    .bg-c-greenyellow {background: greenyellow;}
-    .bg-c-grey {background: grey;}
-	
-	.bg-c-honeydew {background: honeydew;}
-    .bg-c-hotpink {background: hotpink;}
-	
-	.bg-c-indianred {background: indianred;}
-    .bg-c-indigo {background: indigo;}
-    .bg-c-ivory {background: ivory;}
-	
-	.bg-c-khaki {background: khaki;}
-	
-	.bg-c-lavender {background: lavender;}
-    .bg-c-lavenderblush {background: lavenderblush;}
-    .bg-c-lawngreen {background: lawngreen;}
-    .bg-c-lemonchiffon {background: lemonchiffon;}
-    .bg-c-lightblue {background: lightblue;}
-    .bg-c-lightcoral {background: lightcoral;}
-    .bg-c-lightcyan {background: lightcyan;}
-    .bg-c-lightgoldenrodyellow {background: lightgoldenrodyellow;}
-    .bg-c-lightgray {background: lightgray;}
-    .bg-c-lightgreen {background: lightgreen;}
-    .bg-c-lightpink {background: lightpink;}
-    .bg-c-lightsalmon {background: lightsalmon;}
-    .bg-c-lightseagreen {background: lightseagreen;}
-    .bg-c-lightskyblue {background: lightskyblue;}
-    .bg-c-lightslategray {background: lightslategray;}
-    .bg-c-lightslategrey {background: lightslategrey;}
-    .bg-c-lightsteelblue {background: lightsteelblue;}
-    .bg-c-lightyellow {background: lightyellow;}
-    .bg-c-lime {background: lime;}
-    .bg-c-limegreen {background: limegreen;}
-    .bg-c-linen {background: linen;}
-	
-	.bg-c-magenta {background: magenta;}
-    .bg-c-maroon {background: maroon;}
-    .bg-c-mediumaquamarine {background: mediumaquamarine;}
-    .bg-c-mediumblue {background: mediumblue;}
-    .bg-c-mediumorchid {background: mediumorchid;}
-    .bg-c-mediumpurple {background: mediumpurple;}
-    .bg-c-mediumseagreen {background: mediumseagreen;}
-    .bg-c-mediumslateblue {background: mediumslateblue;}
-    .bg-c-mediumspringgreen {background: mediumspringgreen;}
-    .bg-c-mediumturquoise {background: mediumturquoise;}
-    .bg-c-mediumvioletred {background: mediumvioletred;}
-    .bg-c-midnightblue {background: midnightblue;}
-    .bg-c-mintcream {background: mintcream;}
-    .bg-c-mistyrose {background: mistyrose;}
-    .bg-c-moccasin {background: moccasin;}
-	
-	.bg-c-navajowhite {background: navajowhite;}
-    .bg-c-navy {background: navy;}
-	
-	.bg-c-oldlace {background: oldlace;}
-    .bg-c-olive {background: olive;}
-    .bg-c-olivedrab {background: olivedrab;}
-    .bg-c-orange {background: orange;}
-    .bg-c-orangered {background: orangered;}
-    .bg-c-orchid {background: orchid;}
-	
-	.bg-c-palegoldenrod {background: palegoldenrod;}
-    .bg-c-palegreen {background: palegreen;}
-    .bg-c-paleturquoise {background: paleturquoise;}
-    .bg-c-palevioletred {background: palevioletred;}
-    .bg-c-papayawhip {background: papayawhip;}
-    .bg-c-peachpuff {background: peachpuff;}
-    .bg-c-peru {background: peru;}
-    .bg-c-pink {background: pink;}
-    .bg-c-plum {background: plum;}
-    .bg-c-powderblue {background: powderblue;}
-    .bg-c-purple {background: purple;}
-	
-	.bg-c-rebeccapurple {background: rebeccapurple;}
-    .bg-c-red {background: red;}
-    .bg-c-rosybrown {background: rosybrown;}
-    .bg-c-royalblue {background: royalblue;}
-	
-	.bg-c-saddlebrown {background: saddlebrown;}
-    .bg-c-salmon {background: salmon;}
-    .bg-c-sandybrown {background: sandybrown;}
-    .bg-c-seagreen {background: seagreen;}
-    .bg-c-seashell {background: seashell;}
-    .bg-c-sienna {background: sienna;}
-    .bg-c-silver {background: silver;}
-    .bg-c-skyblue {background: skyblue;}
-    .bg-c-slateblue {background: slateblue;}
-    .bg-c-slategray {background: slategray;}
-    .bg-c-slategrey {background: slategrey;}
-    .bg-c-snow {background: snow;}
-    .bg-c-springgreen {background: springgreen;}
-    .bg-c-steelblue {background: steelblue;}
-	
-	.bg-c-tan {background: tan;}
-    .bg-c-teal {background: teal;}
-    .bg-c-thistle {background: thistle;}
-    .bg-c-tomato {background: tomato;}
-    .bg-c-transparent {background: transparent;}
-    .bg-c-turquoise {background: turquoise;}
-	
-	.bg-c-violet {background: violet;}
-    .bg-c-wheat {background: wheat;}
-    .bg-c-white {background: white;}
-    .bg-c-whitesmoke {background: whitesmoke;}
-    .bg-c-yellow {background: yellow;}
-    .bg-c-yellowgreen {background: yellowgreen;}
-	
 /* BORDER COLOR */
+.br-c-aliceblue {border-color: aliceblue;}
+.br-c-antiquewhite {border-color: antiquewhite;}
+.br-c-aqua {border-color: aqua;}
+.br-c-aquamarine {border-color: aquamarine;}
+.br-c-azure {border-color: azure;}
+.br-c-beige {border-color: beige;}
+.br-c-bisque {border-color: bisque;}
+.br-c-black {border-color: black;}
+.br-c-blanchedalmond {border-color: blanchedalmond;}
+.br-c-blue {border-color: blue;}
+.br-c-blueviolet {border-color: blueviolet;}
+.br-c-brown {border-color: brown;}
+.br-c-burlywood {border-color: burlywood;}
+.br-c-cadetblue {border-color: cadetblue;}
+.br-c-chartreuse {border-color: chartreuse;}
+.br-c-chocolate {border-color: chocolate;}
+.br-c-coral {border-color: coral;}
+.br-c-cornflowerblue {border-color: cornflowerblue;}
+.br-c-cornsilk {border-color: cornsilk;}
+.br-c-crimson {border-color: crimson;}
+.br-c-currentColor {border-color: currentColor;}
+.br-c-currentcolor {border-color: currentcolor;}
+.br-c-cyan {border-color: cyan;}
+.br-c-darkblue {border-color: darkblue;}
+.br-c-darkcyan {border-color: darkcyan;}
+.br-c-darkgoldenrod {border-color: darkgoldenrod;}
+.br-c-darkgray {border-color: darkgray;}
+.br-c-darkgreen {border-color: darkgreen;}
+.br-c-darkgrey {border-color: darkgrey;}
+.br-c-darkkhaki {border-color: darkkhaki;}
+.br-c-darkmagenta {border-color: darkmagenta;}
+.br-c-darkolivegreen {border-color: darkolivegreen;}
+.br-c-darkorange {border-color: darkorange;}
+.br-c-darkorchid {border-color: darkorchid;}
+.br-c-darkred {border-color: darkred;}
+.br-c-darksalmon {border-color: darksalmon;}
+.br-c-darkseagreen {border-color: darkseagreen;}
+.br-c-darkslateblue {border-color: darkslateblue;}
+.br-c-darkslategray {border-color: darkslategray;}
+.br-c-darkslategrey {border-color: darkslategrey;}
+.br-c-darkturquoise {border-color: darkturquoise;}
+.br-c-darkviolet {border-color: darkviolet;}
+.br-c-deeppink {border-color: deeppink;}
+.br-c-deepskyblue {border-color: deepskyblue;}
+.br-c-dimgray {border-color: dimgray;}
+.br-c-dimgrey {border-color: dimgrey;}
+.br-c-dodgerblue {border-color: dodgerblue;}
+.br-c-firebrick {border-color: firebrick;}
+.br-c-floralwhite {border-color: floralwhite;}
+.br-c-forestgreen {border-color: forestgreen;}
+.br-c-fuchsia {border-color: fuchsia;}
+.br-c-gainsboro {border-color: gainsboro;}
+.br-c-ghostwhite {border-color: ghostwhite;}
+.br-c-gold {border-color: gold;}
+.br-c-goldenrod {border-color: goldenrod;}
+.br-c-gray {border-color: gray;}
+.br-c-green {border-color: green;}
+.br-c-greenyellow {border-color: greenyellow;}
+.br-c-grey {border-color: grey;}
+.br-c-honeydew {border-color: honeydew;}
+.br-c-hotpink {border-color: hotpink;}
+.br-c-indianred {border-color: indianred;}
+.br-c-indigo {border-color: indigo;}
+.br-c-ivory {border-color: ivory;}
+.br-c-khaki {border-color: khaki;}
+.br-c-lavender {border-color: lavender;}
+.br-c-lavenderblush {border-color: lavenderblush;}
+.br-c-lawngreen {border-color: lawngreen;}
+.br-c-lemonchiffon {border-color: lemonchiffon;}
+.br-c-lightblue {border-color: lightblue;}
+.br-c-lightcoral {border-color: lightcoral;}
+.br-c-lightcyan {border-color: lightcyan;}
+.br-c-lightgoldenrodyellow {border-color: lightgoldenrodyellow;}
+.br-c-lightgray {border-color: lightgray;}
+.br-c-lightgreen {border-color: lightgreen;}
+.br-c-lightpink {border-color: lightpink;}
+.br-c-lightsalmon {border-color: lightsalmon;}
+.br-c-lightseagreen {border-color: lightseagreen;}
+.br-c-lightskyblue {border-color: lightskyblue;}
+.br-c-lightslategray {border-color: lightslategray;}
+.br-c-lightslategrey {border-color: lightslategrey;}
+.br-c-lightsteelblue {border-color: lightsteelblue;}
+.br-c-lightyellow {border-color: lightyellow;}
+.br-c-lime {border-color: lime;}
+.br-c-limegreen {border-color: limegreen;}
+.br-c-linen {border-color: linen;}
+.br-c-magenta {border-color: magenta;}
+.br-c-maroon {border-color: maroon;}
+.br-c-mediumaquamarine {border-color: mediumaquamarine;}
+.br-c-mediumblue {border-color: mediumblue;}
+.br-c-mediumorchid {border-color: mediumorchid;}
+.br-c-mediumpurple {border-color: mediumpurple;}
+.br-c-mediumseagreen {border-color: mediumseagreen;}
+.br-c-mediumslateblue {border-color: mediumslateblue;}
+.br-c-mediumspringgreen {border-color: mediumspringgreen;}
+.br-c-mediumturquoise {border-color: mediumturquoise;}
+.br-c-mediumvioletred {border-color: mediumvioletred;}
+.br-c-midnightblue {border-color: midnightblue;}
+.br-c-mintcream {border-color: mintcream;}
+.br-c-mistyrose {border-color: mistyrose;}
+.br-c-moccasin {border-color: moccasin;}
+.br-c-navajowhite {border-color: navajowhite;}
+.br-c-navy {border-color: navy;}
+.br-c-oldlace {border-color: oldlace;}
+.br-c-olive {border-color: olive;}
+.br-c-olivedrab {border-color: olivedrab;}
+.br-c-orange {border-color: orange;}
+.br-c-orangered {border-color: orangered;}
+.br-c-orchid {border-color: orchid;}
+.br-c-palegoldenrod {border-color: palegoldenrod;}
+.br-c-palegreen {border-color: palegreen;}
+.br-c-paleturquoise {border-color: paleturquoise;}
+.br-c-palevioletred {border-color: palevioletred;}
+.br-c-papayawhip {border-color: papayawhip;}
+.br-c-peachpuff {border-color: peachpuff;}
+.br-c-peru {border-color: peru;}
+.br-c-pink {border-color: pink;}
+.br-c-plum {border-color: plum;}
+.br-c-powderblue {border-color: powderblue;}
+.br-c-purple {border-color: purple;}
+.br-c-rebeccapurple {border-color: rebeccapurple;}
+.br-c-red {border-color: red;}
+.br-c-rosybrown {border-color: rosybrown;}
+.br-c-royalblue {border-color: royalblue;}
+.br-c-saddlebrown {border-color: saddlebrown;}
+.br-c-salmon {border-color: salmon;}
+.br-c-sandybrown {border-color: sandybrown;}
+.br-c-seagreen {border-color: seagreen;}
+.br-c-seashell {border-color: seashell;}
+.br-c-sienna {border-color: sienna;}
+.br-c-silver {border-color: silver;}
+.br-c-skyblue {border-color: skyblue;}
+.br-c-slateblue {border-color: slateblue;}
+.br-c-slategray {border-color: slategray;}
+.br-c-slategrey {border-color: slategrey;}
+.br-c-snow {border-color: snow;}
+.br-c-springgreen {border-color: springgreen;}
+.br-c-steelblue {border-color: steelblue;}
+.br-c-tan {border-color: tan;}
+.br-c-teal {border-color: teal;}
+.br-c-thistle {border-color: thistle;}
+.br-c-tomato {border-color: tomato;}
+.br-c-transparent {border-color: transparent;}
+.br-c-turquoise {border-color: turquoise;}
+.br-c-violet {border-color: violet;}
+.br-c-wheat {border-color: wheat;}
+.br-c-white {border-color: white;}
+.br-c-whitesmoke {border-color: whitesmoke;}
+.br-c-yellow {border-color: yellow;}
+.br-c-yellowgreen {border-color: yellowgreen;}
 
-	.br-c-aliceblue {border-color: aliceblue;}
-	.br-c-antiquewhite {border-color: antiquewhite;}
-	.br-c-aqua {border-color: aqua;}
-	.br-c-aquamarine {border-color: aquamarine;}
-	.br-c-azure {border-color: azure;}
-
-	.br-c-beige {border-color: beige;}
-    .br-c-bisque {border-color: bisque;}
-    .br-c-black {border-color: black;}
-    .br-c-blanchedalmond {border-color: blanchedalmond;}
-    .br-c-blue {border-color: blue;}
-    .br-c-blueviolet {border-color: blueviolet;}
-    .br-c-brown {border-color: brown;}
-    .br-c-burlywood {border-color: burlywood;}
-	
-	.br-c-cadetblue {border-color: cadetblue;}
-    .br-c-chartreuse {border-color: chartreuse;}
-    .br-c-chocolate {border-color: chocolate;}
-    .br-c-coral {border-color: coral;}
-    .br-c-cornflowerblue {border-color: cornflowerblue;}
-    .br-c-cornsilk {border-color: cornsilk;}
-    .br-c-crimson {border-color: crimson;}
-    .br-c-currentColor {border-color: currentColor;}
-    .br-c-currentcolor {border-color: currentcolor;}
-    .br-c-cyan {border-color: cyan;}
-	
-	.br-c-darkblue {border-color: darkblue;}
-    .br-c-darkcyan {border-color: darkcyan;}
-    .br-c-darkgoldenrod {border-color: darkgoldenrod;}
-    .br-c-darkgray {border-color: darkgray;}
-    .br-c-darkgreen {border-color: darkgreen;}
-    .br-c-darkgrey {border-color: darkgrey;}
-    .br-c-darkkhaki {border-color: darkkhaki;}
-    .br-c-darkmagenta {border-color: darkmagenta;}
-    .br-c-darkolivegreen {border-color: darkolivegreen;}
-    .br-c-darkorange {border-color: darkorange;}
-    .br-c-darkorchid {border-color: darkorchid;}
-    .br-c-darkred {border-color: darkred;}
-    .br-c-darksalmon {border-color: darksalmon;}
-    .br-c-darkseagreen {border-color: darkseagreen;}
-    .br-c-darkslateblue {border-color: darkslateblue;}
-    .br-c-darkslategray {border-color: darkslategray;}
-    .br-c-darkslategrey {border-color: darkslategrey;}
-    .br-c-darkturquoise {border-color: darkturquoise;}
-    .br-c-darkviolet {border-color: darkviolet;}
-    .br-c-deeppink {border-color: deeppink;}
-    .br-c-deepskyblue {border-color: deepskyblue;}
-    .br-c-dimgray {border-color: dimgray;}
-    .br-c-dimgrey {border-color: dimgrey;}
-    .br-c-dodgerblue {border-color: dodgerblue;}
-	
-	.br-c-firebrick {border-color: firebrick;}
-    .br-c-floralwhite {border-color: floralwhite;}
-    .br-c-forestgreen {border-color: forestgreen;}
-    .br-c-fuchsia {border-color: fuchsia;}
-	
-	.br-c-gainsboro {border-color: gainsboro;}
-    .br-c-ghostwhite {border-color: ghostwhite;}
-    .br-c-gold {border-color: gold;}
-    .br-c-goldenrod {border-color: goldenrod;}
-    .br-c-gray {border-color: gray;}
-    .br-c-green {border-color: green;}
-    .br-c-greenyellow {border-color: greenyellow;}
-    .br-c-grey {border-color: grey;}
-	
-	.br-c-honeydew {border-color: honeydew;}
-    .br-c-hotpink {border-color: hotpink;}
-	
-	.br-c-indianred {border-color: indianred;}
-    .br-c-indigo {border-color: indigo;}
-    .br-c-ivory {border-color: ivory;}
-	
-	.br-c-khaki {border-color: khaki;}
-	
-	.br-c-lavender {border-color: lavender;}
-    .br-c-lavenderblush {border-color: lavenderblush;}
-    .br-c-lawngreen {border-color: lawngreen;}
-    .br-c-lemonchiffon {border-color: lemonchiffon;}
-    .br-c-lightblue {border-color: lightblue;}
-    .br-c-lightcoral {border-color: lightcoral;}
-    .br-c-lightcyan {border-color: lightcyan;}
-    .br-c-lightgoldenrodyellow {border-color: lightgoldenrodyellow;}
-    .br-c-lightgray {border-color: lightgray;}
-    .br-c-lightgreen {border-color: lightgreen;}
-    .br-c-lightpink {border-color: lightpink;}
-    .br-c-lightsalmon {border-color: lightsalmon;}
-    .br-c-lightseagreen {border-color: lightseagreen;}
-    .br-c-lightskyblue {border-color: lightskyblue;}
-    .br-c-lightslategray {border-color: lightslategray;}
-    .br-c-lightslategrey {border-color: lightslategrey;}
-    .br-c-lightsteelblue {border-color: lightsteelblue;}
-    .br-c-lightyellow {border-color: lightyellow;}
-    .br-c-lime {border-color: lime;}
-    .br-c-limegreen {border-color: limegreen;}
-    .br-c-linen {border-color: linen;}
-	
-	.br-c-magenta {border-color: magenta;}
-    .br-c-maroon {border-color: maroon;}
-    .br-c-mediumaquamarine {border-color: mediumaquamarine;}
-    .br-c-mediumblue {border-color: mediumblue;}
-    .br-c-mediumorchid {border-color: mediumorchid;}
-    .br-c-mediumpurple {border-color: mediumpurple;}
-    .br-c-mediumseagreen {border-color: mediumseagreen;}
-    .br-c-mediumslateblue {border-color: mediumslateblue;}
-    .br-c-mediumspringgreen {border-color: mediumspringgreen;}
-    .br-c-mediumturquoise {border-color: mediumturquoise;}
-    .br-c-mediumvioletred {border-color: mediumvioletred;}
-    .br-c-midnightblue {border-color: midnightblue;}
-    .br-c-mintcream {border-color: mintcream;}
-    .br-c-mistyrose {border-color: mistyrose;}
-    .br-c-moccasin {border-color: moccasin;}
-	
-	.br-c-navajowhite {border-color: navajowhite;}
-    .br-c-navy {border-color: navy;}
-	
-	.br-c-oldlace {border-color: oldlace;}
-    .br-c-olive {border-color: olive;}
-    .br-c-olivedrab {border-color: olivedrab;}
-    .br-c-orange {border-color: orange;}
-    .br-c-orangered {border-color: orangered;}
-    .br-c-orchid {border-color: orchid;}
-	
-	.br-c-palegoldenrod {border-color: palegoldenrod;}
-    .br-c-palegreen {border-color: palegreen;}
-    .br-c-paleturquoise {border-color: paleturquoise;}
-    .br-c-palevioletred {border-color: palevioletred;}
-    .br-c-papayawhip {border-color: papayawhip;}
-    .br-c-peachpuff {border-color: peachpuff;}
-    .br-c-peru {border-color: peru;}
-    .br-c-pink {border-color: pink;}
-    .br-c-plum {border-color: plum;}
-    .br-c-powderblue {border-color: powderblue;}
-    .br-c-purple {border-color: purple;}
-	
-	.br-c-rebeccapurple {border-color: rebeccapurple;}
-    .br-c-red {border-color: red;}
-    .br-c-rosybrown {border-color: rosybrown;}
-    .br-c-royalblue {border-color: royalblue;}
-	
-	.br-c-saddlebrown {border-color: saddlebrown;}
-    .br-c-salmon {border-color: salmon;}
-    .br-c-sandybrown {border-color: sandybrown;}
-    .br-c-seagreen {border-color: seagreen;}
-    .br-c-seashell {border-color: seashell;}
-    .br-c-sienna {border-color: sienna;}
-    .br-c-silver {border-color: silver;}
-    .br-c-skyblue {border-color: skyblue;}
-    .br-c-slateblue {border-color: slateblue;}
-    .br-c-slategray {border-color: slategray;}
-    .br-c-slategrey {border-color: slategrey;}
-    .br-c-snow {border-color: snow;}
-    .br-c-springgreen {border-color: springgreen;}
-    .br-c-steelblue {border-color: steelblue;}
-	
-	.br-c-tan {border-color: tan;}
-    .br-c-teal {border-color: teal;}
-    .br-c-thistle {border-color: thistle;}
-    .br-c-tomato {border-color: tomato;}
-    .br-c-transparent {border-color: transparent;}
-    .br-c-turquoise {border-color: turquoise;}
-	
-	.br-c-violet {border-color: violet;}
-    .br-c-wheat {border-color: wheat;}
-    .br-c-white {border-color: white;}
-    .br-c-whitesmoke {border-color: whitesmoke;}
-    .br-c-yellow {border-color: yellow;}
-    .br-c-yellowgreen {border-color: yellowgreen;}
-	
-	/* BRAND COLORS */
+/* BRAND COLORS */
 .bd-c-500px {color: #0099e5;}
 .bd-c-adn {color: #4a484c;}
 .bd-c-amazon {color: #f90;}
@@ -1053,4 +1041,4 @@ textarea {padding: 10px;
 .bd-c-yelp {color: #af0606;}
 .bd-c-youtube,
 .bd-c-youtube-play,
-.bd-c-youtube-square {color: #e52d27;}	
+.bd-c-youtube-square {color: #e52d27;}
