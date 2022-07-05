@@ -24,19 +24,19 @@
 * {box-sizing: border-box;}
 
 /* FORM FIELDS */
-input {font-family: inherit;
+.form input {font-family: inherit;
  padding: 10px;
  border-radius: 3px;
  border: 1px solid #555;}
 
-input[type=submit], input[type=button] {font-family: inherit;
+.form  input[type=submit], .form  input[type=button] {font-family: inherit;
  padding: 10px 20px;
  border-radius: 3px;
  border: 1px solid #555;
  background: #666;
  color: #fff;}
 
-textarea {padding: 10px;
+.form  textarea {padding: 10px;
 border-radius: 3px;
 border: 2px solid #555;
 font-family: inherit;}
@@ -55,6 +55,12 @@ font-family: inherit;}
 .td-underline {text-decoration: underline;}
 .td-wavy {text-decoration: wavy;}
  
+/*TEXT TRANSFORM*/
+.tt-capitalize {text-transform: capitalize;}
+.tt-lowercase {text-transform: lowercase;}
+.tt-none {text-transform: none;}
+.tt-uppercase (text-transform: uppercase;}
+	
 /*FONT SIZE*/
 .fs-1 {font-size: 1px;}
 .fs-2 {font-size: 2px;}
@@ -200,26 +206,76 @@ font-family: inherit;}
 .mb, .mb li {margin-bottom: var(--wm-space);}
 .ml, .ml li {margin-left: var(--wm-space);}
 .mr, .mr li {margin-right: var(--wm-space);}
+
 .m-5, .m-5 li {margin:5px;}
 .m-10, .m-10 li {margin:10px;}
 .m-15, .m-15 li {margin:15px;}
 .m-0, .m-0 li {margin: 0px ! important;}
+
 .mt-0, .mt-0 li {margin-top: 0px ! important;}
 .mb-0, .mb-0 li {margin-bottom: 0px ! important;}
 .ml-0, .ml-0 li {margin-left: 0px ! important;}
 .mr-0, .mr-0 li {margin-right: 0px ! important;}
+
 .mt-5, .mt-5 li {margin-top: 5px ! important;}
 .mb-5, .mb-5 li {margin-bottom: 5px ! important;}
 .ml-5, .ml-5 li {margin-left: 5px ! important;}
 .mr-5, .mr-5 li {margin-right: 5px ! important;}
+
 .mt-10, .mt-10 li {margin-top: 10px ! important;}
 .mb-10, .mb-10 li {margin-bottom: 10px ! important;}
 .ml-10, .ml-10 li {margin-left: 10px ! important;}
 .mr-10, .mr-10 li {margin-right: 10px ! important;}
+
 .mt-15, .mt-15 li {margin-top: 15px ! important;}
 .mb-15, .mb-15 li {margin-bottom: 15px ! important;}
 .ml-15, .ml-15 li {margin-left: 15px ! important;}
 .mr-15, .mr-15 li {margin-right: 15px ! important;}
+
+.mt-20, .mt-20 li {margin-top: 20px ! important;}
+.mb-20, .mb-20 li {margin-bottom: 20px ! important;}
+.ml-20, .ml-20 li {margin-left: 20px ! important;}
+.mr-20, .mr-20 li {margin-right: 20px ! important;}
+
+.mt-n5 {margin-top: -5px ! important;}
+.mb-n5 {margin-bottom: -5px ! important;}
+.ml-n5 {margin-left: -5px ! important;}
+.mr-n5 {margin-right: -5px ! important;}
+
+.mt-n10 {margin-top: -10px ! important;}
+.mb-n10 {margin-bottom: -10px ! important;}
+.ml-n10 {margin-left: -10px ! important;}
+.mr-n10 {margin-right: -10px ! important;}
+
+.mt-n15 {margin-top: -15px ! important;}
+.mb-n15 {margin-bottom: -15px ! important;}
+.ml-n15 {margin-left: -15px ! important;}
+.mr-n15 {margin-right: -15px ! important;}
+
+.mt-n20 {margin-top: -20px ! important;}
+.mb-n20 {margin-bottom: -20px ! important;}
+.ml-n20 {margin-left: -20px ! important;}
+.mr-n20 {margin-right: -20px ! important;}
+
+.mt-n25 {margin-top: -25px ! important;}
+.mb-n25 {margin-bottom: -25px ! important;}
+.ml-n25 {margin-left: -25px ! important;}
+.mr-n25 {margin-right: -25px ! important;}
+
+.mt-n30 {margin-top: -30px ! important;}
+.mb-n30 {margin-bottom: -30px ! important;}
+.ml-n30 {margin-left: -30px ! important;}
+.mr-n30 {margin-right: -30px ! important;}
+
+.mt-p5 {margin-top: 5% ! important;}
+.mb-p5 {margin-bottom: 5% ! important;}
+.ml-p5 {margin-left: 5% ! important;}
+.mr-p5 {margin-right: 5% ! important;}
+
+.mt-p10 {margin-top: 10% ! important;}
+.mb-p10 {margin-bottom: 10% ! important;}
+.ml-p10 {margin-left: 10% ! important;}
+.mr-p10 {margin-right: 10% ! important;}
 
 /* PADDING PROPERTIES */
 .p, .p li {padding: var(--wm-space);}
@@ -250,6 +306,21 @@ font-family: inherit;}
 .pb-15, .pb-15 li {padding-bottom: 15px ! important;}
 .pl-15, .pl-15 li {padding-left: 15px ! important;}
 .pr-15, .pr-15 li {padding-right: 15px ! important;}
+
+.pt-20, .pt-20 li {padding-top: 20px ! important;}
+.pb-20, .pb-20 li {padding-bottom: 20px ! important;}
+.pl-20, .pl-20 li {padding-left: 20px ! important;}
+.pr-20, .pr-20 li {padding-right: 20px ! important;}
+
+.pt-p5 {padding-top: 5% ! important;}
+.pb-p5 {padding-bottom: 5% ! important;}
+.pl-p5 {padding-left: 5% ! important;}
+.pr-p5 {padding-right: 5% ! important;}
+
+.pt-p10 {padding-top: 10% ! important;}
+.pb-p10 {padding-bottom: 10% ! important;}
+.pl-p10 {padding-left: 10% ! important;}
+.pr-p10 {padding-right: 10% ! important;}
 
 /* BORDER PROPERTIES */
 .b, .b li {border: 1px solid;}
@@ -380,21 +451,21 @@ font-family: inherit;}
 
 /*LIST PROPERTIES*/
 ul, ol {
-padding:0px;
-padding-top:0px;
-padding-right:0px;
-padding-bottom:0px;
-padding-left:0px;
-margin:0px;
-margin-top:0px;
-margin-right:0px;
-margin-bottom:0px;
-margin-left:0px;
-border:none;
-border-top:none;
-border-right:none;
-border-bottom:none;
-border-left:none;		
+padding:0px ! important;
+padding-top:0px ! important;
+padding-right:0px ! important;
+padding-bottom:0px ! important;
+padding-left:0px ! important;
+margin:0px ! important;
+margin-top:0px ! important;
+margin-right:0px ! important;
+margin-bottom:0px ! important;
+margin-left:0px ! important;
+border:none ! important;
+border-top:none ! important;
+border-right:none ! important;
+border-bottom:none ! important;
+border-left:none ! important;		
 }
 /*MOBILE ONLY VISIBLE*/
 @media only screen and (max-width: 600px) {
