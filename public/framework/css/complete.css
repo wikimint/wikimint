@@ -59,7 +59,7 @@ font-family: inherit;}
 .tt-capitalize {text-transform: capitalize;}
 .tt-lowercase {text-transform: lowercase;}
 .tt-none {text-transform: none;}
-.tt-uppercase (text-transform: uppercase;}
+.tt-uppercase {text-transform: uppercase;}
 	
 /*FONT SIZE*/
 .fs-1 {font-size: 1px;}
