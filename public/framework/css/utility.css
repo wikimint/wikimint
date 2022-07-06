@@ -499,6 +499,7 @@ border-left:none ! important;
 
 /*WIDTH PROPERTIES*/
 .w-auto, .no-res .w-auto {width:auto;}
+.no-res .d-flex {display:flex ! important;}
 .w-100, .no-res .w-100 {width:100%;}
 .w-90, .no-res .w-90 {width:90%;}
 .w-80, .no-res .w-80 {width:80%;}
@@ -511,6 +512,7 @@ border-left:none ! important;
 .w-10, .no-res .w-10 {width:10%;}
 @media screen and (max-width: 600px) {
 .res-mob .d-flex {display:block;}
+.no-res .d-flex {display:flex ! important;}
 .res-mob .w-90 { width: 100%;}
 .res-mob .w-80 { width: 100%;}
 .res-mob .w-70 { width: 100%;}
@@ -523,6 +525,7 @@ border-left:none ! important;
 }
 @media only screen and (max-width: 960px) {
 .res-tab .d-flex {display:block;}
+.no-res .d-flex {display:flex ! important;}
 .res-tab .w-90 { width: 100%;} 
 .res-tab .w-80 { width: 100%;} 
 .res-tab .w-70 { width: 100%;} 
