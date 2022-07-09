@@ -467,6 +467,46 @@ border-right:none ! important;
 border-bottom:none ! important;
 border-left:none ! important;		
 }
+
+/*CURSOR PROPERTIES*/
+.cu-alias {cursor: alias;}
+.cu-all-scroll {cursor: all-scroll;}
+.cu-auto {cursor: auto;}
+.cu-cell {cursor: cell;}
+.cu-col-resize {cursor: col-resize;}
+.cu-context-menu {cursor: context-menu;}
+.cu-copy {cursor: copy;}
+.cu-crosshair {cursor: crosshair;}
+.cu-default {cursor: default;}
+.cu-e-resize {cursor: e-resize;}
+.cu-ew-resize {cursor: ew-resize;}
+.cu-grab {cursor: grab;}
+.cu-grabbing {cursor: grabbing;}
+.cu-help {cursor: help;}
+.cu-move {cursor: move;}
+.cu-n-resize {cursor: n-resize;}
+.cu-ne-resize {cursor: ne-resize;}
+.cu-nesw-resize {cursor: nesw-resize;}
+.cu-no-drop {cursor: no-drop;}
+.cu-none {cursor: none;}
+.cu-not-allowed {cursor: not-allowed;}
+.cu-ns-resize {cursor: ns-resize;}
+.cu-nw-resize {cursor: nw-resize;}
+.cu-nwse-resize {cursor: nwse-resize;}
+.cu-pointer {cursor: pointer;}
+.cu-progress {cursor: progress;}
+.cu-row-resize {cursor: row-resize;}
+.cu-s-resize {cursor: s-resize;}
+.cu-se-resize {cursor: se-resize;}
+.cu-sw-resize {cursor: sw-resize;}
+.cu-text {cursor: text;}
+.cu-vertical-text {cursor: vertical-text;}
+.cu-w-resize {cursor: w-resize;}
+.cu-w-resize {cursor: w-resize;}
+.cu-wait {cursor: wait;}
+.cu-zoom-in {cursor: zoom-in;}
+.cu-zoom-out {cursor: zoom-out;}
+
 /*MOBILE ONLY VISIBLE*/
 @media only screen and (max-width: 600px) {
  .only-mob { display: block;}
