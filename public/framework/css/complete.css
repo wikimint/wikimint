@@ -330,6 +330,10 @@ font-family: inherit;}
 .bb, .bb li {border-bottom: 1px solid;}
 .bl, .bl li {border-left: 1px solid;}
 .br, .br li {border-right: 1px solid;}
+.bt-0, .bt-0 li {border-top: 0px solid;}
+.bb-0, .bb-0 li {border-bottom: 0px solid;}
+.bl-0, .bl-0 li {border-left: 0px solid;}
+.br-0, .br-0 li {border-right: 0px solid;}
 .btlr-0, .btlr-0 li {border-top-left-radius: 0px ! important;}
 .btrr-0, .btrr-0 li {border-top-right-radius: 0px ! important;}
 .bblr-0, .bblr-0 li {border-bottom-left-radius: 0px ! important;}
