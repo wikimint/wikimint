@@ -336,6 +336,7 @@ font-family: inherit;}
 
 /* BORDER PROPERTIES */
 .b, .b li {border: 1px solid;}
+.b-0, .b-0 li {border: 0px solid;}
 .b-rad, .b-rad li {border-radius: 5px;}
 .b-rad-50, .b-rad-50 li {border-radius: 50%;}
 .bt, .bt li {border-top: 1px solid;}
