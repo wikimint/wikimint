@@ -131,6 +131,18 @@ font-family: inherit;}
 .op-09 {opacity: 0.9;}
 .op-1, .op-10 {opacity: 1;}
 
+ /*GRAYSCALE PROPERTIES*/
+.gs-01 {filter: grayscale(0.1);}
+.gs-02 {filter: grayscale(0.2);}
+.gs-03 {filter: grayscale(0.3);}
+.gs-04 {filter: grayscale(0.4);}
+.gs-05 {filter: grayscale(0.5);}
+.gs-06 {filter: grayscale(0.6);}
+.gs-07 {filter: grayscale(0.7);}
+.gs-08 {filter: grayscale(0.8);}
+.gs-09 {filter: grayscale(0.9);}
+.gs-1, .gs-10 {filter: grayscale(1);}
+
 /* FONT WEIGHT */
 .fw-100 {font-weight: 100;}
 .fw-200 {font-weight: 200;}
