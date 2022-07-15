@@ -355,10 +355,10 @@ font-family: inherit;}
 .bbrr-0, .bbrr-0 li {border-bottom-right-radius: 0px ! important;}
 
 /*BORDER WIDTH*/
-.bw-thin, .bw-thin li {border-width : thin;}
-.bw-medium, .bw-medium li {border-width : medium;}
-.bw-thick, .bw-thick li {border-width : thick;}
-.ol-none, .bw-none li {outline:none;}
+.bw-thin, .bw-thin-h:hover, .bw-thin li {border-width : thin;}
+.bw-medium, .bw-medium-h:hover, .bw-medium li {border-width : medium;}
+.bw-thick, .bw-thick-h:hover, .bw-thick li {border-width : thick;}
+.ol-none, .ol-none-h:hover, .bw-none li {outline:none;}
 
 /*BORDER STYLE*/
 .bs-dotted {border-style: dotted;}
