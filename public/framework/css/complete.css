@@ -112,12 +112,12 @@ font-family: inherit;}
 .p-revert{position:revert;}
 
 /*FLOAT PROPERTIES*/
-.f-left, .f-left li {float : left;}
-.f-right, .f-right li {float : right;}
-.f-none, .f-none li {float : none;}
-.f-revert, .f-revert li {float : revert;}
-.f-iend, .f-iend li {float : inline-end;}
-.f-istart, .f-istart li {float : inline-start;}
+.f-left, .list .f-left li {float : left;}
+.f-right, .list .f-right li {float : right;}
+.f-none, .list .f-none li {float : none;}
+.f-revert, .list .f-revert li {float : revert;}
+.f-iend, .list .f-iend li {float : inline-end;}
+.f-istart, .list .f-istart li {float : inline-start;}
  
  /*OPACITY PROPERTIES*/
 .op-0 {opacity: 0;}
@@ -215,41 +215,41 @@ font-family: inherit;}
 .va-top {vertical-align: top;}
 
 /* MARGIN PROPERTIES */
-.m, .m li {margin: var(--wm-space);}
-.mt, .mt li {margin-top: var(--wm-space);}
-.mb, .mb li {margin-bottom: var(--wm-space);}
-.ml, .ml li {margin-left: var(--wm-space);}
-.mr, .mr li {margin-right: var(--wm-space);}
+.m, .list .m li {margin: var(--wm-space);}
+.mt, .list .mt li {margin-top: var(--wm-space);}
+.mb, .list .mb li {margin-bottom: var(--wm-space);}
+.ml, .list .ml li {margin-left: var(--wm-space);}
+.mr, .list .mr li {margin-right: var(--wm-space);}
 
-.m-5, .m-5 li {margin:5px;}
-.m-10, .m-10 li {margin:10px;}
-.m-15, .m-15 li {margin:15px;}
-.m-0, .m-0 li {margin: 0px ! important;}
+.m-5, .list .m-5 li {margin:5px;}
+.m-10, .list .m-10 li {margin:10px;}
+.m-15, .list .m-15 li {margin:15px;}
+.m-0, .list .m-0 li {margin: 0px ! important;}
 
-.mt-0, .mt-0 li {margin-top: 0px ! important;}
-.mb-0, .mb-0 li {margin-bottom: 0px ! important;}
-.ml-0, .ml-0 li {margin-left: 0px ! important;}
-.mr-0, .mr-0 li {margin-right: 0px ! important;}
+.mt-0, .list .mt-0 li {margin-top: 0px ! important;}
+.mb-0, .list .mb-0 li {margin-bottom: 0px ! important;}
+.ml-0, .list .ml-0 li {margin-left: 0px ! important;}
+.mr-0, .list .mr-0 li {margin-right: 0px ! important;}
 
-.mt-5, .mt-5 li {margin-top: 5px ! important;}
-.mb-5, .mb-5 li {margin-bottom: 5px ! important;}
-.ml-5, .ml-5 li {margin-left: 5px ! important;}
-.mr-5, .mr-5 li {margin-right: 5px ! important;}
+.mt-5, .list .mt-5 li {margin-top: 5px ! important;}
+.mb-5, .list .mb-5 li {margin-bottom: 5px ! important;}
+.ml-5, .list .ml-5 li {margin-left: 5px ! important;}
+.mr-5, .list .mr-5 li {margin-right: 5px ! important;}
 
-.mt-10, .mt-10 li {margin-top: 10px ! important;}
-.mb-10, .mb-10 li {margin-bottom: 10px ! important;}
-.ml-10, .ml-10 li {margin-left: 10px ! important;}
-.mr-10, .mr-10 li {margin-right: 10px ! important;}
+.mt-10, .list .mt-10 li {margin-top: 10px ! important;}
+.mb-10, .list .mb-10 li {margin-bottom: 10px ! important;}
+.ml-10, .list .ml-10 li {margin-left: 10px ! important;}
+.mr-10, .list .mr-10 li {margin-right: 10px ! important;}
 
-.mt-15, .mt-15 li {margin-top: 15px ! important;}
-.mb-15, .mb-15 li {margin-bottom: 15px ! important;}
-.ml-15, .ml-15 li {margin-left: 15px ! important;}
-.mr-15, .mr-15 li {margin-right: 15px ! important;}
+.mt-15, .list .mt-15 li {margin-top: 15px ! important;}
+.mb-15, .list .mb-15 li {margin-bottom: 15px ! important;}
+.ml-15, .list .ml-15 li {margin-left: 15px ! important;}
+.mr-15, .list .mr-15 li {margin-right: 15px ! important;}
 
-.mt-20, .mt-20 li {margin-top: 20px ! important;}
-.mb-20, .mb-20 li {margin-bottom: 20px ! important;}
-.ml-20, .ml-20 li {margin-left: 20px ! important;}
-.mr-20, .mr-20 li {margin-right: 20px ! important;}
+.mt-20, .list .mt-20 li {margin-top: 20px ! important;}
+.mb-20, .list .mb-20 li {margin-bottom: 20px ! important;}
+.ml-20, .list .ml-20 li {margin-left: 20px ! important;}
+.mr-20, .list .mr-20 li {margin-right: 20px ! important;}
 
 .mt-n5 {margin-top: -5px ! important;}
 .mb-n5 {margin-bottom: -5px ! important;}
@@ -292,39 +292,39 @@ font-family: inherit;}
 .mr-p10 {margin-right: 10% ! important;}
 
 /* PADDING PROPERTIES */
-.p, .p li {padding: var(--wm-space);}
-.pt, .pt li {padding-top: var(--wm-space);}
-.pb, .pb li {padding-bottom: var(--wm-space);}
-.pl, .pl li {padding-left: var(--wm-space);}
-.pr, .pr li {padding-right: var(--wm-space);}
-.p-5, .p-5 li {padding:5px;}
-.p-10, .p-10 li {padding:10px;}
-.p-15, .p-15 li {padding:15px;}
-.p-0, .p-0 li {padding: 0px ! important;}
-.pt-0, .pt-0 li {padding-top: 0px ! important;}
-.pb-0, .pb-0 li {padding-bottom: 0px ! important;}
-.pl-0, .pl-0 li {padding-left: 0px ! important;}
-.pr-0, .pr-0 li {padding-right: 0px ! important;}
+.p, .list .p li {padding: var(--wm-space);}
+.pt, .list .pt li {padding-top: var(--wm-space);}
+.pb, .list .pb li {padding-bottom: var(--wm-space);}
+.pl, .list .pl li {padding-left: var(--wm-space);}
+.pr, .list .pr li {padding-right: var(--wm-space);}
+.p-5, .list .p-5 li {padding:5px;}
+.p-10, .list .p-10 li {padding:10px;}
+.p-15, .list .p-15 li {padding:15px;}
+.p-0, .list .p-0 li {padding: 0px ! important;}
+.pt-0, .list .pt-0 li {padding-top: 0px ! important;}
+.pb-0, .list .pb-0 li {padding-bottom: 0px ! important;}
+.pl-0, .list .pl-0 li {padding-left: 0px ! important;}
+.pr-0, .list .pr-0 li {padding-right: 0px ! important;}
 
-.pt-5, .pt-5 li {padding-top: 5px ! important;}
-.pb-5, .pb-5 li {padding-bottom: 5px ! important;}
-.pl-5, .pl-5 li {padding-left: 5px ! important;}
-.pr-5, .pr-5 li {padding-right: 5px ! important;}
+.pt-5, .list .pt-5 li {padding-top: 5px ! important;}
+.pb-5, .list .pb-5 li {padding-bottom: 5px ! important;}
+.pl-5, .list .pl-5 li {padding-left: 5px ! important;}
+.pr-5, .list .pr-5 li {padding-right: 5px ! important;}
 
-.pt-10, .pt-10 li {padding-top: 10px ! important;}
-.pb-10, .pb-10 li {padding-bottom: 10px ! important;}
-.pl-10, .pl-10 li {padding-left: 10px ! important;}
-.pr-10, .pr-10 li {padding-right: 10px ! important;}
+.pt-10, .list .pt-10 li {padding-top: 10px ! important;}
+.pb-10, .list .pb-10 li {padding-bottom: 10px ! important;}
+.pl-10, .list .pl-10 li {padding-left: 10px ! important;}
+.pr-10, .list .pr-10 li {padding-right: 10px ! important;}
 
-.pt-15, .pt-15 li {padding-top: 15px ! important;}
-.pb-15, .pb-15 li {padding-bottom: 15px ! important;}
-.pl-15, .pl-15 li {padding-left: 15px ! important;}
-.pr-15, .pr-15 li {padding-right: 15px ! important;}
+.pt-15, .list .pt-15 li {padding-top: 15px ! important;}
+.pb-15, .list .pb-15 li {padding-bottom: 15px ! important;}
+.pl-15, .list .pl-15 li {padding-left: 15px ! important;}
+.pr-15, .list .pr-15 li {padding-right: 15px ! important;}
 
-.pt-20, .pt-20 li {padding-top: 20px ! important;}
-.pb-20, .pb-20 li {padding-bottom: 20px ! important;}
-.pl-20, .pl-20 li {padding-left: 20px ! important;}
-.pr-20, .pr-20 li {padding-right: 20px ! important;}
+.pt-20, .list .pt-20 li {padding-top: 20px ! important;}
+.pb-20, .list .pb-20 li {padding-bottom: 20px ! important;}
+.pl-20, .list .pl-20 li {padding-left: 20px ! important;}
+.pr-20, .list .pr-20 li {padding-right: 20px ! important;}
 
 .pt-p5 {padding-top: 5% ! important;}
 .pb-p5 {padding-bottom: 5% ! important;}
@@ -337,28 +337,28 @@ font-family: inherit;}
 .pr-p10 {padding-right: 10% ! important;}
 
 /* BORDER PROPERTIES */
-.b, .b li {border: 1px solid;}
-.b-0, .b-0 li {border: 0px solid;}
-.b-rad, .b-rad li {border-radius: 5px;}
-.b-rad-50, .b-rad-50 li {border-radius: 50%;}
-.bt, .bt li {border-top: 1px solid;}
-.bb, .bb li {border-bottom: 1px solid;}
-.bl, .bl li {border-left: 1px solid;}
-.br, .br li {border-right: 1px solid;}
-.bt-0, .bt-0 li {border-top: 0px solid;}
-.bb-0, .bb-0 li {border-bottom: 0px solid;}
-.bl-0, .bl-0 li {border-left: 0px solid;}
-.br-0, .br-0 li {border-right: 0px solid;}
-.btlr-0, .btlr-0 li {border-top-left-radius: 0px ! important;}
-.btrr-0, .btrr-0 li {border-top-right-radius: 0px ! important;}
-.bblr-0, .bblr-0 li {border-bottom-left-radius: 0px ! important;}
-.bbrr-0, .bbrr-0 li {border-bottom-right-radius: 0px ! important;}
+.b, .list .b li {border: 1px solid;}
+.b-0, .list .b-0 li {border: 0px solid;}
+.b-rad, .list .b-rad li {border-radius: 5px;}
+.b-rad-50, .list .b-rad-50 li {border-radius: 50%;}
+.bt, .list .bt li {border-top: 1px solid;}
+.bb, .list .bb li {border-bottom: 1px solid;}
+.bl, .list .bl li {border-left: 1px solid;}
+.br, .list .br li {border-right: 1px solid;}
+.bt-0, .list .bt-0 li {border-top: 0px solid;}
+.bb-0, .list .bb-0 li {border-bottom: 0px solid;}
+.bl-0, .list .bl-0 li {border-left: 0px solid;}
+.br-0, .list .br-0 li {border-right: 0px solid;}
+.btlr-0, .list .btlr-0 li {border-top-left-radius: 0px ! important;}
+.btrr-0, .list .btrr-0 li {border-top-right-radius: 0px ! important;}
+.bblr-0, .list .bblr-0 li {border-bottom-left-radius: 0px ! important;}
+.bbrr-0, .list .bbrr-0 li {border-bottom-right-radius: 0px ! important;}
 
 /*BORDER WIDTH*/
-.bw-thin, .bw-thin-h:hover, .bw-thin li {border-width : thin;}
-.bw-medium, .bw-medium-h:hover, .bw-medium li {border-width : medium;}
-.bw-thick, .bw-thick-h:hover, .bw-thick li {border-width : thick;}
-.ol-none, .ol-none-h:hover, .bw-none li {outline:none;}
+.bw-thin, .bw-thin-h:hover, .list .bw-thin li {border-width : thin;}
+.bw-medium, .bw-medium-h:hover, .list .bw-medium li {border-width : medium;}
+.bw-thick, .bw-thick-h:hover, .list .bw-thick li {border-width : thick;}
+.ol-none, .ol-none-h:hover, .list .bw-none li {outline:none;}
 
 /*BORDER STYLE*/
 .bs-dotted {border-style: dotted;}
@@ -371,14 +371,14 @@ font-family: inherit;}
 .bs-outset {border-style: outset;}
 
 /*BORDER COLOR*/
-.br-c-primary, .br-c-primary li, .br-c-primary-h:hover {border-color: var(--wm-primary);}
-.br-c-secondary, .br-c-secondary li, .br-c-secondary-h:hover {border-color: var(--wm-secondary);}
-.br-c-info, .br-c-info li, .br-c-info-h:hover {border-color: var(--wm-info);}
-.br-c-success, .br-c-success li, .br-c-success-h:hover {border-color: var(--wm-success);}
-.br-c-danger, .br-c-danger li, .br-c-danger-h:hover {border-color: var(--wm-danger);}
-.br-c-dark, .br-c-dark li, .br-c-dark-h:hover {border-color: var(--wm-dark);}
-.br-c-light, .br-c-light li, .br-c-light-h:hover {border-color: var(--wm-light);}
-.br-c-warning, .br-c-warning li, .br-c-warning-h:hover {border-color: var(--wm-warning);}
+.br-c-primary, .list .br-c-primary li, .br-c-primary-h:hover {border-color: var(--wm-primary);}
+.br-c-secondary, .list .br-c-secondary li, .br-c-secondary-h:hover {border-color: var(--wm-secondary);}
+.br-c-info, .list .br-c-info li, .br-c-info-h:hover {border-color: var(--wm-info);}
+.br-c-success, .list .br-c-success li, .br-c-success-h:hover {border-color: var(--wm-success);}
+.br-c-danger, .list .br-c-danger li, .br-c-danger-h:hover {border-color: var(--wm-danger);}
+.br-c-dark, .list .br-c-dark li, .br-c-dark-h:hover {border-color: var(--wm-dark);}
+.br-c-light, .list .br-c-light li, .br-c-light-h:hover {border-color: var(--wm-light);}
+.br-c-warning, .list .br-c-warning li, .br-c-warning-h:hover {border-color: var(--wm-warning);}
 
 .br-c-primary-dim, .br-c-primary-dim-h:hover {border-color: var(--wm-primary-dim);}
 .br-c-success-dim, .br-c-success-dim-h:hover {border-color: var(--wm-success-dim);}
@@ -469,7 +469,7 @@ font-family: inherit;}
 .wb-revert {word-break: revert;}
 
 /*LIST PROPERTIES*/
-ul, ol {
+.list  ul, .list  ol {
 padding:0px ! important;
 padding-top:0px ! important;
 padding-right:0px ! important;
