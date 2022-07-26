@@ -484,8 +484,20 @@ border:none ! important;
 border-top:none ! important;
 border-right:none ! important;
 border-bottom:none ! important;
-border-left:none ! important;		
+border-left:none ! important;
+list-style-type: none ! important;		
 }
+
+/*LIST STYLE PROPERTIES */
+.lst-auto .list .lst-auto li{list-style-type: auto;}
+.lst-circle .list .lst-circle  li{list-style-type: circle;}
+.lst-decimal .list .lst-decimal  li{list-style-type: decimal;}
+.lst-disc .list .lst-disc  li{list-style-type: disc;}
+.lst-disclosure-closed .list .lst-disclosure-closed  li{list-style-type: disclosure-closed;}
+.lst-disclosure-open .list .lst-disclosure-open  li{list-style-type: disclosure-open;}
+.lst-none .list .lst-none  li{list-style-type: none;}
+.lst-revert .list .lst-revert  li{list-style-type: revert;}
+.lst-square .list .lst-square  li{list-style-type: square;}
 
 /*CURSOR PROPERTIES*/
 .cu-alias {cursor: alias;}
