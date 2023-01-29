@@ -1,4 +1,48 @@
 
+
+//STORAGE
+function findStorageKey(item,index){
+  console.log(item);
+var secondsNow = Math.round((Date.now()) / 1000);
+console.log(secondsNow);
+if(item.startsWith('wm_') === true){
+  console.log('wm_ found');
+var seconds = parseInt(item.substring(item.indexOf('wm_')+3,item.indexOf("_wm")));
+console.log(seconds);
+if(seconds < secondsNow){
+  console.log(item);
+  localStorage.removeItem(item);
+  var nextItem = item.substring(item.indexOf("_wm") + 4);
+  console.log(nextItem);
+  localStorage.removeItem(nextItem);
+}
+}
+}
+
+function expireLocalStorage(){
+var l, i;
+var array = [];
+for (i = 0; i < localStorage.length; i++) {
+x = localStorage.key(i);
+//x = localStorage.getItem(y);
+array.push(x);
+}
+//console.log(array);
+array.forEach(findStorageKey);
+}
+expireLocalStorage();
+
+function setItemLocal(key,value,seconds){
+  localStorage.setItem(key,value);
+  if(seconds){
+    var newSeconds = Math.round((Date.now() / 1000) + seconds);
+    console.log(newSeconds);
+    var newKey = "wm_" + newSeconds + "_wm_" + key; 
+    console.log(newKey);
+    localStorage.setItem(newKey,1);
+    } 
+  }
+
 //COOKIES HANDLING
 function setCookie(cname,cvalue,seconds) {
   //console.log(cname + cvalue + cduration);
@@ -26,17 +70,6 @@ let name = cname + "=";
  return; 
  }
 
-//STORAGE
-var l, i;
-var array = [];
-for (i = 0; i < localStorage.length; i++) {
-y = localStorage.key(i);
-  x = localStorage.getItem(y);
-  array.push(x);
-}
-// console.log(array);
-
-//setItemLocal(key,value,seconds){}
 
  //QUERY SELECTORS
  function qs(string){
