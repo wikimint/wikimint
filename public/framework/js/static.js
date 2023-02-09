@@ -67,7 +67,7 @@ let name = cname + "=";
       return c.substring(name.length, c.length);
     }
   }
- return; 
+ //return; 
  }
 
 
@@ -200,6 +200,29 @@ function toHex(str,hex){
   return hex
 }
 
+function b2a(str){
+if(str){
+return window.btoa(str);  
+}
+}
+
+function a2b(str){
+  if(str){
+    return window.atob(str);  
+    }
+}
+
+function encode(str){
+  if(str){
+    return toHex(b2a(str));
+  }
+}
+function decode(str){
+  if(str){
+    return a2b(fromHex(str));
+  }  
+}
+
 //HIDE & SHOW
 function identifyElement(string){
  // console.log('ie received');
@@ -271,33 +294,98 @@ function click(string,nth){action("click",string,nth);}
 
 
 //TIMEOUT & INTERVALS
-/*
-function setTimer(from,to,action){
-  const timerSecond;
+
+function setTimer(from,action,action2){
   if(from){
-    if(to){
+      var stime =  new Date().valueOf() + ((from + 1) * 1000);
       var timerloop = setInterval(timerstart, 1000);
       function timerstart(){
 var ctime = new Date().valueOf();
-var diff = ctime - stime;  
-if(diff < (ltime * 1000)){
-  timerSecond = Math.round(60 - (diff / 1000));
-console.log('In timer');
-} else {  clearInterval(timerloop); console.log('out timer');}
-
-  if(from > to){
-
-  } else if(from < to){
-
+var diff = stime - ctime;  
+if(diff > 0){
+  timerSecond = Math.round(diff / 1000);
+  if(action2){
+    action2.call();
+  }
+console.log(timerSecond);
+} else {  
+  clearInterval(timerloop); 
+  if(action){
+    action.call();
   }
 }
-    }
+
+}
   }
 
 }
-*/
-
-
-
 
 //ARRAY
+
+//DATABASE
+function dbset(db,key,value){
+if(db && key && value){
+ var dbdata = decode(localStorage.getItem(db));
+ if(dbdata){
+ var data = dbdata;
+ } else {
+  var data = '{}';
+ }
+ var data = JSON.parse(data);
+ //var data = Object.assign(data, {key: value});
+  data[key] = value;
+ var dataout = JSON.stringify(data); 
+ localStorage.setItem(db,encode(dataout));
+ return 'Success';
+}
+}
+
+function dbget(db,key){
+  if(db && key){
+    var dbdata = decode(localStorage.getItem(db));
+    if(dbdata){
+    var data = JSON.parse(dbdata);
+    var dataout = data[key];
+    if(dataout) {return dataout;} else {return;}
+    }
+  }
+}
+
+function dblist(db){
+if(db){
+  var dbdata = decode(localStorage.getItem(db));
+  if(dbdata){
+    var data = JSON.parse(dbdata);
+    return data;
+  }
+}
+}
+
+//URL HANDLING
+
+function getHash(){
+  if(window.location.hash) {
+    var hash = window.location.hash.substring(1); 
+    return hash;
+    }
+}
+
+//GET POST
+function rGET(url){
+  if(url){
+    var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", url);
+  xhttp.send();
+  return xhttp.responseText;
+  }
+}
+
+function rPOST(url,data){
+  if(url){
+    var xhttp = new XMLHttpRequest();
+  xhttp.open("POST", url);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+if(data){xhttp.send(data);}else{xhttp.send();}
+return xhttp.responseText;
+  }
+}
